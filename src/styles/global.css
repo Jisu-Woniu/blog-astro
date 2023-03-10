@@ -1,0 +1,35 @@
+:root {
+  --accent: 124, 58, 237;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    #da62c4 30%,
+    white 60%
+  );
+}
+
+html {
+  background-color: #f1f5f9;
+  font-family: "Source Sans 3", "Noto Sans SC", sans-serif;
+}
+
+.serif {
+  font-family: "Source Serif 4", "Noto Serif SC", serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
