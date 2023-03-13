@@ -1,17 +1,26 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Layout from "@layouts/Layout.astro";
+import Card from "@/components/Card.astro";
+import { getCollection } from "astro:content";
+const blogEntries = await getCollection("blog");
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="极速蜗牛的博客">
+  <a href="/">首页</a>
+  <a href="/about/">关于</a>
   <main>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <h1>This is <span class="text-gradient">My Astro Learning Blog</span></h1>
-    <p>This is where I will post about my journey learning Astro.</p>
+    <h1>这是<span class="text-gradient">极速蜗牛的博客</span></h1>
+    <p>This is where I will post about my journey learning programming.</p>
     <ul role="list" class="link-card-grid">
-      <Card href="/blog/post-1/" title="Post 1" body="My First Blog Post" />
-      <Card href="/blog/post-2/" title="Post 2" body="My Second Blog Post" />
+      {
+        blogEntries.map((post) => (
+          <Card
+            href={`/blog/${post.slug}`}
+            title={post.data.title}
+            body={post.data.description}
+          />
+        ))
+      }
     </ul>
   </main>
 </Layout>

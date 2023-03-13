@@ -1,44 +1,39 @@
 ---
+import Layout from "@/layouts/Layout.astro";
+
 const pageTitle = "About Me";
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const skillColor = "navy";
 ---
 
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{pageTitle}</title>
-    <style define:vars={{ skillColor }}>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-      .skill {
-        color: var(--skillColor);
-        font-weight: bold;
-      }
-    </style>
-  </head>
-  <body>
-    <a href="/">首页</a>
-    <a href="/about/">关于</a>
-    <h1>{pageTitle}</h1>
-    <h2>... and my new Astro site!</h2>
+<Layout title="极速蜗牛的博客">
+  <a href="/">首页</a>
+  <a href="/about/">关于</a>
+  <h1>{pageTitle}</h1>
+  <h2>... and my new Astro site!</h2>
 
-    <p>
-      I am working through Astro's introductory tutorial. This is the second
-      page on my website, and it's the first one I built myself!
-    </p>
+  <p>
+    I am working through Astro's introductory tutorial. This is the second page
+    on my website, and it's the first one I built myself!
+  </p>
 
-    <p>
-      This site will update as I complete more of the tutorial, so keep checking
-      back and see how my journey is going!
-    </p>
-    <p>Some of my skills:</p>
-    <ul>
-      {skills.map((x) => <li class="skill">{x}</li>)}
-    </ul>
-  </body>
-</html>
+  <p>
+    This site will update as I complete more of the tutorial, so keep checking
+    back and see how my journey is going!
+  </p>
+  <p>Some of my skills:</p>
+  <ul>
+    {skills.map((x) => <li class="skill">{x}</li>)}
+  </ul>
+</Layout>
+<style define:vars={{ skillColor }}>
+  h1 {
+    color: purple;
+    font-size: 4rem;
+  }
+  .skill {
+    color: var(--skillColor);
+    font-weight: bold;
+  }
+</style>

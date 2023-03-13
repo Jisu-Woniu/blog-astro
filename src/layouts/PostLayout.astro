@@ -5,13 +5,16 @@ import "@fontsource/noto-sans-sc";
 import "@fontsource/source-serif-4";
 import "@fontsource/noto-serif-sc";
 import "katex/dist/katex.css";
-import "../styles/global.css";
+import "@styles/global.css";
 
 export interface Props {
-  content: { title: string; pubDate: string };
+  frontmatter: {
+    title: string;
+    pubDate: Date;
+  };
 }
 
-const { content } = Astro.props;
+const { frontmatter } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
@@ -20,13 +23,25 @@ const { content } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    <style is:global>
+      p code {
+        background-color: rgba(175, 164, 193, 0.2);
+        padding: 0.2em 0.4em;
+        border-radius: 6px;
+      }
+    </style>
     <meta name="generator" content={Astro.generator} />
-    <title>{content.title}</title>
+    <title>{frontmatter.title} - 极速蜗牛的博客</title>
   </head>
   <body>
-    <h1>{content.title}</h1>
-    <p>发布于 {new Date(content.pubDate).toLocaleDateString()}</p>
+    <h1>{frontmatter.title}</h1>
+    <p>
+      发布于
+      <time datetime={frontmatter.pubDate.toDateString()}>
+        {frontmatter.pubDate.toLocaleDateString()}
+      </time>
+    </p>
+
     <hr />
     <slot />
   </body>

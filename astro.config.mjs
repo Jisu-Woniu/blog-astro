@@ -11,7 +11,8 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkGfm, remarkSmartypants, remarkMath],
     rehypePlugins: [rehypeKatex],
+    shikiConfig: { theme: "github-light" },
   },
-  output: "server",
-  adapter: cloudflare(),
+  // output: "server",
+  // adapter: cloudflare(),
 });

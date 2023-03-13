@@ -1,10 +1,12 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
       "@styles/*": ["src/styles/*"],
       "@layouts/*": ["src/layouts/*"]
-    }
+    },
+    "target": "ES6"
   }
 }
