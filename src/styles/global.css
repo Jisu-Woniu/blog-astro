@@ -1,3 +1,4 @@
+@import "lxgw-wenkai-screen-webfont/lxgwwenkaigbscreen.css";
 :root {
   --accent: 124, 58, 237;
   --accent-gradient: linear-gradient(
@@ -10,7 +11,7 @@
 
 html {
   background-color: #f1f5f9;
-  font-family: "Source Sans 3", "Noto Sans SC", sans-serif;
+  font-family: "Source Sans 3", "LXGW WenKai Screen", sans-serif;
 }
 
 .serif {
@@ -20,7 +21,7 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
+  max-width: 100ch;
   padding: 1rem;
   line-height: 1.5;
 }

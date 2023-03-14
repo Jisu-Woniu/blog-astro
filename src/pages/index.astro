@@ -1,13 +1,11 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
 import Card from "@/components/Card.astro";
 import { getCollection } from "astro:content";
 const blogEntries = await getCollection("blog");
 ---
 
 <Layout title="极速蜗牛的博客">
-  <a href="/">首页</a>
-  <a href="/about/">关于</a>
   <main>
     <h1>这是<span class="text-gradient">极速蜗牛的博客</span></h1>
     <p>This is where I will post about my journey learning programming.</p>
@@ -29,7 +27,6 @@ const blogEntries = await getCollection("blog");
   main {
     margin: auto;
     padding: 1.5rem;
-    max-width: 60ch;
   }
   h1 {
     font-size: 3rem;

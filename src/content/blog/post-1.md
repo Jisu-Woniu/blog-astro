@@ -6,7 +6,10 @@ author: "Astro Learner"
 image:
   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
   alt: "The Astro logo with the word One."
-tags: ["astro", "blogging", "learning in public"]
+tags:
+  - "astro"
+  - "blogging"
+  - "learning in public"
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing
@@ -57,7 +60,7 @@ and optionally with in-line changes such as annotations and abbreviations.
 
 #### Blockquote without attribution
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
+> Tiam, ad mint andaepu dandae nostion secatur sequo quae.\
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 
 #### Blockquote with attribution

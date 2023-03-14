@@ -1,17 +1,20 @@
 ---
 import "@fontsource/fira-code";
 import "@fontsource/source-sans-3";
-import "@fontsource/noto-sans-sc";
+import "@fontsource/source-sans-3/variable.css";
+import "@fontsource/noto-sans-sc/chinese-simplified.css";
 import "@fontsource/source-serif-4";
-import "@fontsource/noto-serif-sc";
+import "@fontsource/source-serif-4/variable.css";
+import "@fontsource/noto-serif-sc/chinese-simplified.css";
 import "katex/dist/katex.css";
-import "@styles/global.css";
+import "@/styles/global.css";
+import "@/assets/prism.css";
+import Navigation from "@/components/Navigation.astro";
+import type { IFrontmatter } from "@/content";
+import Footer from "@/components/Footer.astro";
 
 export interface Props {
-  frontmatter: {
-    title: string;
-    pubDate: Date;
-  };
+  frontmatter: IFrontmatter;
 }
 
 const { frontmatter } = Astro.props as Props;
@@ -24,16 +27,33 @@ const { frontmatter } = Astro.props as Props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <style is:global>
-      p code {
+      p code,
+      table code,
+      h1 code,
+      h2 code,
+      h3 code,
+      h4 code,
+      h5 code,
+      h6 code {
         background-color: rgba(175, 164, 193, 0.2);
         padding: 0.2em 0.4em;
         border-radius: 6px;
+      }
+      .astro-code {
+        border: 2px solid rgba(175, 164, 193, 0.2);
+        border-radius: 10px;
       }
     </style>
     <meta name="generator" content={Astro.generator} />
     <title>{frontmatter.title} - 极速蜗牛的博客</title>
   </head>
-  <body>
+  <body
+    class="line-numbers"
+    data-prismjs-copy="📋"
+    data-prismjs-copy-success="✅"
+    data-prismjs-copy-error="❎"
+  >
+    <Navigation />
     <h1>{frontmatter.title}</h1>
     <p>
       发布于
@@ -44,5 +64,11 @@ const { frontmatter } = Astro.props as Props;
 
     <hr />
     <slot />
+    <Footer />
+    <script>
+      import Prism from "prismjs";
+
+      Prism.highlightAll(true);
+    </script>
   </body>
 </html>

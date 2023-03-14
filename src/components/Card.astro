@@ -12,7 +12,7 @@ const { href, title, body } = Astro.props;
   <a href={href}>
     <h2>
       {title}
-      <span>&rarr;</span>
+      <span class="indicator">&gt;</span>
     </h2>
     <p>
       {body}
@@ -59,6 +59,9 @@ const { href, title, body } = Astro.props;
     background-image: var(--accent-gradient);
   }
   .link-card:is(:hover, :focus-within) h2 {
+    color: rgb(var(--accent));
+  }
+  .indicator {
     color: rgb(var(--accent));
   }
 </style>
