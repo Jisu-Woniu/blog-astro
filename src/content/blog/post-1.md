@@ -1,7 +1,8 @@
 ---
-title: "My First Blog Post"
+title: "Markdown Test"
 pubDate: 2022-07-01
-description: "This is the first post of my new Astro blog."
+description: "Here is a sample of some basic Markdown syntax that can be used
+when writing Markdown content in Astro."
 author: "Astro Learner"
 image:
   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
@@ -20,17 +21,17 @@ Markdown content in Astro.
 The following HTML `<h1>`—`<h6>` elements represent six levels of section
 headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
-# H1
-
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-###### H6
+> # H1
+>
+> ## H2
+>
+> ### H3
+>
+> #### H4
+>
+> ##### H5
+>
+> ###### H6
 
 ## Paragraph
 
@@ -126,10 +127,22 @@ H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the
+Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to end the
 session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and
 other small creatures.
 
-$$ \int_a^b f(x)dx=F(b)-F(a) $$
+## Math
+
+### Inline
+
+Newton-Leibniz formula is written as $\int_a^b f(x)dx=F(b)-F(a)$
+
+### Block
+
+Newton-Leibniz formula is written as:
+
+$$
+\int_a^b f(x)dx=F(b)-F(a)
+$$

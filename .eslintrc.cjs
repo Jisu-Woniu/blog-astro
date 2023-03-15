@@ -15,15 +15,18 @@ module.exports = {
       parserOptions: {
         parser: "@typescript-eslint/parser",
         extraFileExtensions: [".astro"],
+        parserOptions: {
+          project: "./tsconfig.json",
+        },
       },
       rules: {
         // override/add rules settings here, such as:
         // "astro/no-set-html-directive": "error"
-        "@typescript-eslint/triple-slash-reference": {
-          lib: "always",
-          path: "always",
-          types: "prefer-import",
-        },
+        // "@typescript-eslint/triple-slash-reference": {
+        //   path: "always",
+        //   types: "prefer-import",
+        //   lib: "always",
+        // },
       },
     },
   ],

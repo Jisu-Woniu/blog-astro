@@ -11,7 +11,7 @@ import "@/styles/global.css";
 import "@/assets/prism.css";
 import Navigation from "@/components/Navigation.astro";
 import type { IFrontmatter } from "@/content";
-import Footer from "@/components/Footer.astro";
+import Comment from "@/components/Comment.astro";
 
 export interface Props {
   frontmatter: IFrontmatter;
@@ -26,24 +26,7 @@ const { frontmatter } = Astro.props as Props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <style is:global>
-      p code,
-      table code,
-      h1 code,
-      h2 code,
-      h3 code,
-      h4 code,
-      h5 code,
-      h6 code {
-        background-color: rgba(175, 164, 193, 0.2);
-        padding: 0.2em 0.4em;
-        border-radius: 6px;
-      }
-      .astro-code {
-        border: 2px solid rgba(175, 164, 193, 0.2);
-        border-radius: 10px;
-      }
-    </style>
+
     <meta name="generator" content={Astro.generator} />
     <title>{frontmatter.title} - 极速蜗牛的博客</title>
   </head>
@@ -64,7 +47,7 @@ const { frontmatter } = Astro.props as Props;
 
     <hr />
     <slot />
-    <Footer />
+    <Comment />
     <script>
       import Prism from "prismjs";
 
@@ -72,3 +55,46 @@ const { frontmatter } = Astro.props as Props;
     </script>
   </body>
 </html>
+
+<style is:global>
+  p code,
+  table code,
+  h1 code,
+  h2 code,
+  h3 code,
+  h4 code,
+  h5 code,
+  h6 code {
+    background-color: rgba(175, 164, 193, 0.2);
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+  }
+  blockquote {
+    border: 1px solid #999;
+    color: #222;
+    padding: 2px 0px 2px 20px;
+    margin: 0px;
+    font-style: italic;
+  }
+
+  pre[class*="language-"] {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ddd8;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border: 1px #222 solid;
+    padding: 5px;
+  }
+  kbd {
+    border: 2px solid #cdcdcd;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 -1px 0 0 #cdcdcd;
+    font-size: 0.825rem;
+    padding: 0.25rem;
+  }
+</style>

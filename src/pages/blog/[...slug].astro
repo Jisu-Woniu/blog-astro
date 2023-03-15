@@ -1,6 +1,7 @@
 ---
+import type { IFrontmatter } from "@/content";
 import PostLayout from "@/layouts/PostLayout.astro";
-import { getCollection } from "astro:content";
+import { getCollection, Render } from "astro:content";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
@@ -11,13 +12,13 @@ export async function getStaticPaths() {
 }
 
 export interface Props {
-  entry: { render: any; data: any };
+  entry: { render(): Render[".md"]; data: IFrontmatter };
 }
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<PostLayout frontmatter={entry!.data}>
+<PostLayout frontmatter={entry.data}>
   <Content />
 </PostLayout>
