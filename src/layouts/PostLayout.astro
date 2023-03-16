@@ -2,41 +2,30 @@
 import "@fontsource/fira-code";
 import "@fontsource/source-sans-3";
 import "@fontsource/source-sans-3/variable.css";
-import "@fontsource/noto-sans-sc/chinese-simplified.css";
 import "@fontsource/source-serif-4";
 import "@fontsource/source-serif-4/variable.css";
 import "@fontsource/noto-serif-sc/chinese-simplified.css";
 import "katex/dist/katex.css";
 import "@/styles/global.css";
 import "@/assets/prism.css";
-import Navigation from "@/components/Navigation.astro";
 import type { IFrontmatter } from "@/content";
 import Comment from "@/components/Comment.astro";
+import Layout from "./Layout.astro";
 
 export interface Props {
   frontmatter: IFrontmatter;
 }
 
-const { frontmatter } = Astro.props as Props;
+const { frontmatter } = Astro.props;
 ---
 
-<!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-    <meta name="generator" content={Astro.generator} />
-    <title>{frontmatter.title} - 极速蜗牛的博客</title>
-  </head>
-  <body
+<Layout title={`${frontmatter.title} - 极速蜗牛的博客`}>
+  <main
     class="line-numbers"
     data-prismjs-copy="📋"
     data-prismjs-copy-success="✅"
     data-prismjs-copy-error="❎"
   >
-    <Navigation />
     <h1>{frontmatter.title}</h1>
     <p>
       发布于
@@ -47,14 +36,14 @@ const { frontmatter } = Astro.props as Props;
 
     <hr />
     <slot />
-    <Comment />
-    <script>
-      import Prism from "prismjs";
+  </main>
+  <Comment />
+  <script>
+    import Prism from "prismjs";
 
-      Prism.highlightAll(true);
-    </script>
-  </body>
-</html>
+    Prism.highlightAll(true);
+  </script>
+</Layout>
 
 <style is:global>
   p code,

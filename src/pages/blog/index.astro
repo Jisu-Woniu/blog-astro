@@ -7,11 +7,8 @@ const blogEntries = await getCollection("blog");
 
 <Layout title="极速蜗牛的博客">
   <main>
-    <h1>
-      欢迎来到
-      <span class="text-gradient">极速蜗牛的博客</span>
-    </h1>
-    <p>This is where I will post about my journey learning programming.</p>
+    <h1>文章列表</h1>
+    <p>看看我都写了哪些文章</p>
     <ul role="list" class="link-card-grid">
       {
         blogEntries.map((post) => (
@@ -36,14 +33,6 @@ const blogEntries = await getCollection("blog");
     font-weight: 800;
     margin: 0;
   }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-
   .link-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
