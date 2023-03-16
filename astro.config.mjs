@@ -6,7 +6,6 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import prismjsPlugin from "vite-plugin-prismjs";
 import PurgeCSS from "vite-plugin-purgecss";
-import lit from "@astrojs/lit";
 
 // https://astro.build/config
 export default defineConfig({
@@ -35,5 +34,5 @@ export default defineConfig({
   },
   // output: "server",
   // adapter: cloudflare(),
-  integrations: [lit()],
+  integrations: [],
 });
