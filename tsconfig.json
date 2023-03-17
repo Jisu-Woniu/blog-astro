@@ -1,10 +1,12 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
+    "strict": true,
+    "verbatimModuleSyntax": true,
     "target": "ES6"
   }
 }
