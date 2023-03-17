@@ -11,7 +11,7 @@ import snail from "@/assets/snail.svg";
       </a>
     </div>
     <div class="expand-container">
-      <button type="button" class="btn-expand">
+      <button type="button" id="btn-expand" class="btn-expand">
         <span class="sr-only">展开导航栏</span>
         <svg
           class="icon-expand"
@@ -51,7 +51,7 @@ import snail from "@/assets/snail.svg";
         GitHub
       </a>
     </div>
-    <div class="mobile-menu">
+    <div id="mobile-menu" class="mobile-menu hidden">
       <div class="backdrop"></div>
       <div class="menu">
         <div class="menu-header">
@@ -59,7 +59,7 @@ import snail from "@/assets/snail.svg";
             <img src={snail} aria-hidden="true" class="icon" />
             极速蜗牛的博客
           </a>
-          <button type="button" class="btn-collapse">
+          <button type="button" id="btn-collapse" class="btn-collapse">
             <span class="sr-only">关闭导航栏</span>
             <svg
               class="icon-collapse"
@@ -109,6 +109,21 @@ import snail from "@/assets/snail.svg";
       </div>
     </div>
   </nav>
+  <script>
+    const buttonExpand = document.getElementById(
+      "btn-expand"
+    ) as HTMLButtonElement;
+    const buttonCollapse = document.getElementById(
+      "btn-collapse"
+    ) as HTMLButtonElement;
+    const mobileMenu = document.getElementById("mobile-menu") as HTMLDivElement;
+    buttonExpand.addEventListener("click", () =>
+      mobileMenu.classList.remove("hidden")
+    );
+    buttonCollapse.addEventListener("click", () =>
+      mobileMenu.classList.add("hidden")
+    );
+  </script>
 </header>
 
 <style>
@@ -187,6 +202,7 @@ import snail from "@/assets/snail.svg";
     bottom: 0px;
     left: 0px;
     z-index: 10;
+    backdrop-filter: blur(8px);
   }
   .menu {
     position: fixed;
@@ -284,5 +300,9 @@ import snail from "@/assets/snail.svg";
     .mobile-menu {
       display: none;
     }
+  }
+
+  .mobile-menu.hidden {
+    display: none;
   }
 </style>
