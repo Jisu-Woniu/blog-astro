@@ -1,7 +1,7 @@
 ---
 import type { IFrontmatter } from "@/content";
 import PostLayout from "@/layouts/PostLayout.astro";
-import { getCollection, Render } from "astro:content";
+import { getCollection, type Render } from "astro:content";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");

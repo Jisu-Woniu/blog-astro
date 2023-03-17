@@ -18,7 +18,7 @@ const { title, htmlClass, bodyClass } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
-<html lang="zh-CN" class={htmlClass}>
+<html lang="zh-CN" class:list={htmlClass}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -26,7 +26,7 @@ const { title, htmlClass, bodyClass } = Astro.props as Props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class={bodyClass}>
+  <body class:list={bodyClass}>
     <Navigation />
     <slot />
   </body>

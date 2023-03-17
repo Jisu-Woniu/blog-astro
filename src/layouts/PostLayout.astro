@@ -37,7 +37,7 @@ const { frontmatter } = Astro.props;
     <hr />
     <slot />
   </main>
-  <Comment />
+  <Comment client:visible />
   <script>
     import Prism from "prismjs";
 
