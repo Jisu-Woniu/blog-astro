@@ -2,10 +2,63 @@
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout title="页面走丢了 - 极速蜗牛的博客">
-  <h1>Uh oh，页面走丢了！</h1>
-
-  <p>
-    <a href="/">带我回去</a>
-  </p>
+<Layout
+  title="页面走丢了 - 极速蜗牛的博客"
+  htmlClass={"h-full"}
+  bodyClass={"h-full"}
+>
+  <main>
+    <div class="text-center">
+      <h1>Uh oh，页面走丢了！</h1>
+      <p>
+        您访问的链接 {Astro.url} 不存在
+      </p>
+      <div>
+        <a href="/" class="btn">带我回去</a>
+      </div>
+    </div>
+  </main>
 </Layout>
+
+<style>
+  main {
+    display: grid;
+    min-height: 100%;
+    place-items: center;
+    padding: 6rem 1.5rem;
+  }
+  @media (min-width: 640px) {
+    main {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    main {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  .btn {
+    border-radius: 0.375rem;
+    background-color: #4f46e5;
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: rgb(255 255 255);
+    box-shadow: 0 1px 2px 0 #0000000d;
+  }
+  .btn:hover {
+    background-color: #6366f1;
+  }
+  .btn:focus-visible {
+    outline-width: 2px;
+    outline-offset: 2px;
+    outline-color: #4f46e5;
+  }
+</style>

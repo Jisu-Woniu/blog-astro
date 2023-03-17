@@ -1,10 +1,288 @@
 ---
+import snail from "@/assets/snail.svg";
 ---
 
 <header>
   <nav>
-    <a href="/">首页</a>
-    <a href="/about/">关于</a>
-    <a href="/blog/">文章</a>
+    <div class="brand-container">
+      <a href="/" class="brand">
+        <img src={snail} aria-hidden="true" class="icon" />
+        极速蜗牛的博客
+      </a>
+    </div>
+    <div class="expand-container">
+      <button type="button" class="btn-expand">
+        <span class="sr-only">展开导航栏</span>
+        <svg
+          class="icon-expand"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          >
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div class="links">
+      <a href="/" class="home">首页</a>
+      <a href="/blog/" class="blog">文章</a>
+      <a href="/about/" class="about">关于</a>
+    </div>
+    <div class="github-container">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          class="icon"
+          aria-hidden="true"
+        >
+          <path
+            d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+          >
+          </path>
+        </svg>
+        GitHub
+      </a>
+    </div>
+    <div class="mobile-menu">
+      <div class="backdrop"></div>
+      <div class="menu">
+        <div class="menu-header">
+          <a href="/" class="brand">
+            <img src={snail} aria-hidden="true" class="icon" />
+            极速蜗牛的博客
+          </a>
+          <button type="button" class="btn-collapse">
+            <span class="sr-only">关闭导航栏</span>
+            <svg
+              class="icon-collapse"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-body-container">
+          <div class="menu-body">
+            <div class="menu-link-container">
+              <a href="/" class="home">首页</a>
+              <a href="/blog/" class="blog">文章</a>
+              <a href="/about/" class="about">关于</a>
+            </div>
+            <div class="menu-github-container">
+              <a
+                class="menu-link-github"
+                href="http://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  class="icon"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+                  >
+                  </path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </nav>
 </header>
+
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  nav {
+    display: flex;
+    align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+
+  .brand-container {
+    display: flex;
+    flex: 1 1 0%;
+  }
+  a.brand {
+    margin: -0.375em;
+    padding: 0.375em;
+  }
+
+  .icon {
+    height: 1em;
+  }
+  .expand-container {
+    display: flex;
+  }
+
+  button {
+    border-width: 0;
+    background-color: transparent;
+  }
+  .btn-expand {
+    margin: -0.625rem;
+    padding: 0.625rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    color: #374151;
+  }
+  .icon-expand,
+  .icon-collapse {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .links,
+  .github-container {
+    display: none;
+  }
+  a.brand,
+  .links a,
+  .github-container a {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #111827;
+  }
+  .backdrop {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+  }
+  .menu {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    overflow-y: auto;
+    background-color: white;
+    padding: 1.5rem;
+  }
+  .menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn-collapse {
+    margin: -0.625rem;
+    padding: 0.625rem;
+    border-radius: 0.375rem;
+    color: #374151;
+  }
+
+  .menu-body-container {
+    margin-top: 1.5rem;
+    display: flow-root;
+  }
+  .menu-body {
+    margin-top: -1.5rem;
+  }
+  .menu-body > * ~ * {
+    border: 0 solid;
+    border-color: #6b72801a;
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+  }
+  .menu-link-container,
+  .menu-github-container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .menu-link-container {
+    margin-top: 0.5rem;
+  }
+  .menu-link-container > a {
+    display: block;
+    margin-left: -0.75rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+    color: #111827;
+  }
+
+  .menu-link-github {
+    display: block;
+    margin-left: -0.75rem;
+    border-radius: 0.5rem;
+    padding: 0.625rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+    color: #111827;
+  }
+  .menu-link-container > a:hover,
+  .menu-link-github:hover {
+    background-color: #f9fafb;
+  }
+  @media (min-width: 640px) {
+    .menu {
+      max-width: 24rem;
+      box-shadow: 0 0 0 1px #1118271a;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    nav {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .expand-container {
+      display: none;
+    }
+    .links {
+      display: flex;
+      column-gap: 3rem;
+    }
+    .github-container {
+      display: flex;
+      flex: 1 1 0%;
+      justify-content: flex-end;
+    }
+    .mobile-menu {
+      display: none;
+    }
+  }
+</style>
