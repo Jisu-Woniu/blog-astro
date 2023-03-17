@@ -48,11 +48,11 @@ const { frontmatter } = Astro.props;
 <style is:global>
   a.anchor-link {
     font-size: smaller;
-    color: cornflowerblue;
+    color: transparent;
     margin-left: 1ch;
   }
 
-  a.anchor-link:visited {
+  *:hover > a.anchor-link {
     color: cornflowerblue;
   }
 

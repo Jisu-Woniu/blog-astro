@@ -38,19 +38,11 @@ export default defineConfig({
   vite: {
     plugins: [
       prismjsPlugin({
-        languages: ["html"],
-        // "all",
+        languages: "all",
         plugins: ["line-numbers", "toolbar", "copy-to-clipboard"],
       }),
-      // PurgeCSS({
-      //   safelist: {
-      //     standard: [/code/, /toolbar/, /line-numbers/],
-      //     deep: [/button/],
-      //   },
-      // }),
+      ,
     ],
   },
-  // output: "server",
-  // adapter: cloudflare(),
   integrations: [prefetch(), purgecss()],
 });
