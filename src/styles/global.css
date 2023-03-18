@@ -1,6 +1,9 @@
 @import "lxgw-wenkai-screen-webfont/lxgwwenkaigbscreen.css";
 @import "@fontsource/inter";
 @import "@fontsource/inter/variable.css";
+@import "@fontsource/fira-code";
+@import "@fontsource/fira-code/variable.css";
+
 :root {
   --accent: 124, 58, 237;
   --accent-gradient: linear-gradient(
@@ -15,13 +18,27 @@ html {
   background-color: #f1f5f9;
   font-family: "LXGW WenKai Screen", "Inter", sans-serif;
 }
+
+.serif {
+  font-family: "Source Serif 4", "Noto Serif SC", serif;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+}
+
 @supports (font-variation-settings: normal) {
   html {
     font-family: "LXGW WenKai Screen", "InterVariable", sans-serif;
   }
-}
-.serif {
-  font-family: "Source Serif 4", "Noto Serif SC", serif;
+
+  .serif {
+    font-family: "Source Serif 4Variable", "Noto Serif SC", serif;
+  }
+
+  code {
+    font-family: "Fira CodeVariable", monospace;
+  }
 }
 
 body {
