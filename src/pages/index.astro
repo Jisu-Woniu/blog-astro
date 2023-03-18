@@ -1,8 +1,8 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Card from "@/components/Card.astro";
-import { getCollection } from "astro:content";
-const blogEntries = await getCollection("blog");
+import { getSortedBlogCollection } from "@/utils/ContentUtils";
+const blogEntries = await getSortedBlogCollection();
 ---
 
 <Layout title="极速蜗牛的博客">
@@ -11,7 +11,7 @@ const blogEntries = await getCollection("blog");
       欢迎来到
       <span class="text-gradient">极速蜗牛的博客</span>
     </h1>
-    <p>我的学习足迹👣</p>
+    <p>👣我的学习足迹👣</p>
     <ul role="list" class="link-card-grid">
       {
         blogEntries.map((post) => (

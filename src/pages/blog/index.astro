@@ -1,8 +1,8 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Card from "@/components/Card.astro";
-import { getCollection } from "astro:content";
-const blogEntries = await getCollection("blog");
+import { getSortedBlogCollection } from "@/utils/ContentUtils";
+const blogEntries = await getSortedBlogCollection();
 ---
 
 <Layout title="极速蜗牛的博客">
