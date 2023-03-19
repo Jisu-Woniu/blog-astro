@@ -1,5 +1,10 @@
 ---
 import snail from "@/assets/snail.svg";
+const navLinks = [
+  { href: "/", text: "首页" },
+  { href: "/blog/", text: "文章" },
+  { href: "/links/", text: "友情链接" },
+];
 ---
 
 <header>
@@ -31,9 +36,7 @@ import snail from "@/assets/snail.svg";
       </button>
     </div>
     <div class="links">
-      <a href="/" class="home">首页</a>
-      <a href="/blog/" class="blog">文章</a>
-      <a href="/about/" class="about">关于</a>
+      {navLinks.map((link) => <a href={link.href}>{link.text}</a>)}
     </div>
     <div class="github-container">
       <a
@@ -83,9 +86,7 @@ import snail from "@/assets/snail.svg";
         <div class="menu-body-container">
           <div class="menu-body">
             <div class="menu-link-container">
-              <a href="/" class="home">首页</a>
-              <a href="/blog/" class="blog">文章</a>
-              <a href="/about/" class="about">关于</a>
+              {navLinks.map((link) => <a href={link.href}>{link.text}</a>)}
             </div>
             <div class="menu-github-container">
               <a
