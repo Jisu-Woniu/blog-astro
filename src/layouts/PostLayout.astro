@@ -30,7 +30,7 @@ const { frontmatter } = Astro.props;
     <p>
       发布于
       <time datetime={frontmatter.pubDate.toDateString()}>
-        {frontmatter.pubDate.toLocaleDateString()}
+        {frontmatter.pubDate.toLocaleDateString("zh-CN")}
       </time>
     </p>
 
