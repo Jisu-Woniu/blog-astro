@@ -4,7 +4,6 @@ import remarkSmartypants from "remark-smartypants";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import prismjsPlugin from "vite-plugin-prismjs";
-// import PurgeCSS from "vite-plugin-purgecss";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import purgecss from "astro-purgecss";
@@ -38,7 +37,7 @@ export default defineConfig({
   vite: {
     plugins: [
       prismjsPlugin({
-        languages: "all",
+        languages: ["clike", "csharp", "fsharp"],
         plugins: ["line-numbers", "toolbar", "copy-to-clipboard"],
       }),
       ,
