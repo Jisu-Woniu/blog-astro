@@ -11,12 +11,16 @@ import "@/assets/prism.css";
 import type { IFrontmatter } from "@/content";
 import Comment from "@/components/Comment.astro";
 import Layout from "./Layout.astro";
+import { formatISO, format } from "date-fns";
+import zhCN from "date-fns/locale/zh-CN/index";
 
 export interface Props {
   frontmatter: IFrontmatter;
 }
 
 const { frontmatter } = Astro.props;
+
+const pubDateISO = formatISO(frontmatter.pubDate);
 ---
 
 <Layout title={`${frontmatter.title} - 极速蜗牛的博客`}>
@@ -29,8 +33,8 @@ const { frontmatter } = Astro.props;
     <h1>{frontmatter.title}</h1>
     <p>
       发布于
-      <time datetime={frontmatter.pubDate.toDateString()}>
-        {frontmatter.pubDate.toLocaleDateString("zh-CN")}
+      <time id="publishDate" data-pubdate={pubDateISO} datetime={pubDateISO}>
+        {format(frontmatter.pubDate, "PPP H:mm", { locale: zhCN })}
       </time>
     </p>
 
@@ -39,7 +43,21 @@ const { frontmatter } = Astro.props;
   </main>
   <Comment />
   <script>
+    import { formatDistanceToNow, parseISO } from "date-fns";
+    import zhCN from "date-fns/locale/zh-CN/index";
     import Prism from "prismjs";
+
+    const timeElement = document.getElementById("publishDate");
+    if (timeElement) {
+      const pubDateISO = timeElement.dataset.pubdate;
+      if (pubDateISO) {
+        const relativeDate = formatDistanceToNow(parseISO(pubDateISO), {
+          addSuffix: true,
+          locale: zhCN,
+        });
+        relativeDate && (timeElement.innerText += `（${relativeDate}）`);
+      }
+    }
 
     Prism.highlightAll(true);
   </script>
