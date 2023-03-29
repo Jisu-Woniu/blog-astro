@@ -8,6 +8,8 @@ import "@fontsource/noto-serif-sc/chinese-simplified.css";
 import "@/styles/global.css";
 import Navigation from "@/components/Navigation.astro";
 
+import InfoCard from "@/assets/info-card.png";
+
 export interface Props {
   title: string;
   htmlClass?: string;
@@ -25,6 +27,10 @@ const { title, htmlClass, bodyClass } = Astro.props as Props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <slot name="head">
+      <meta property="og:title" content={title} />
+      <meta property="og:image" content={InfoCard} />
+    </slot>
   </head>
   <body class:list={bodyClass}>
     <Navigation />
