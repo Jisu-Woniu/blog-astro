@@ -139,18 +139,14 @@ const navLinks = [
     </div>
   </nav>
   <script>
-    const buttonExpand = document.getElementById(
-      "btn-expand"
-    ) as HTMLButtonElement;
-    const buttonCollapse = document.getElementById(
-      "btn-collapse"
-    ) as HTMLButtonElement;
-    const mobileMenu = document.getElementById("mobile-menu") as HTMLDivElement;
-    buttonExpand.addEventListener("click", () =>
-      mobileMenu.classList.remove("hidden")
+    const buttonExpand = document.getElementById("btn-expand");
+    const buttonCollapse = document.getElementById("btn-collapse");
+    const mobileMenu = document.getElementById("mobile-menu");
+    buttonExpand?.addEventListener("click", () =>
+      mobileMenu?.classList.remove("hidden")
     );
-    buttonCollapse.addEventListener("click", () =>
-      mobileMenu.classList.add("hidden")
+    buttonCollapse?.addEventListener("click", () =>
+      mobileMenu?.classList.add("hidden")
     );
   </script>
 </header>

@@ -8,6 +8,7 @@ import "@fontsource/noto-serif-sc/chinese-simplified.css";
 import "katex/dist/katex.css";
 import "@/styles/global.css";
 import "@/assets/prism.css";
+import InfoCard from "@/assets/info-card.png";
 import type { IFrontmatter } from "@/content";
 import Comment from "@/components/Comment.astro";
 import Layout from "./Layout.astro";
@@ -24,6 +25,12 @@ const pubDateISO = formatISO(frontmatter.pubDate);
 ---
 
 <Layout title={`${frontmatter.title} - 极速蜗牛的博客`}>
+  <meta
+    slot="head"
+    property="og:title"
+    content={`${frontmatter.title} - 极速蜗牛的博客`}
+  />
+  <meta slot="head" property="og:image" content={InfoCard} />
   <main
     class="line-numbers"
     data-prismjs-copy="📋"
@@ -33,7 +40,7 @@ const pubDateISO = formatISO(frontmatter.pubDate);
     <h1>{frontmatter.title}</h1>
     <p>
       发布于
-      <time id="publishDate" data-pubdate={pubDateISO} datetime={pubDateISO}>
+      <time id="publish-date" data-pubdate={pubDateISO} datetime={pubDateISO}>
         {format(frontmatter.pubDate, "PPP H:mm", { locale: zhCN })}
       </time>
     </p>
@@ -47,7 +54,7 @@ const pubDateISO = formatISO(frontmatter.pubDate);
     import zhCN from "date-fns/locale/zh-CN/index";
     import Prism from "prismjs";
 
-    const timeElement = document.getElementById("publishDate");
+    const timeElement = document.getElementById("publish-date");
     if (timeElement) {
       const pubDateISO = timeElement.dataset.pubdate;
       if (pubDateISO) {
