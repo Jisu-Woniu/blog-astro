@@ -20,7 +20,7 @@
     "@fontsource/noto-serif-sc": "^4.5.11",
     "@fontsource/source-sans-3": "^4.5.13",
     "@fontsource/source-serif-4": "^4.5.17",
-    "astro": "^2.1.8",
+    "astro": "^2.3.0",
     "astro-purgecss": "^2.0.1",
     "date-fns": "^2.29.3",
     "giscus": "^1.2.8",
@@ -37,10 +37,10 @@
   },
   "devDependencies": {
     "@types/prismjs": "^1.26.0",
-    "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.57.0",
-    "astro-eslint-parser": "^0.13.2",
-    "eslint": "^8.37.0",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "astro-eslint-parser": "^0.13.3",
+    "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-astro": "^0.26.1",
     "image-size": "^1.0.2",
@@ -48,7 +48,7 @@
     "prettier": "^2.8.7",
     "prettier-plugin-astro": "^0.8.0",
     "remark-gfm": "^3.0.1",
-    "typescript": "^5.0.2",
+    "typescript": "^5.0.4",
     "vite": "^4.2.1",
     "vite-plugin-purgecss": "^0.2.12"
   }
