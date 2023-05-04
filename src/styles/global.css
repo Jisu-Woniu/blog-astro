@@ -19,10 +19,6 @@ html {
   font-family: "LXGW WenKai Screen", "Inter", sans-serif;
 }
 
-.serif {
-  font-family: "Source Serif 4", "Noto Serif SC", serif;
-}
-
 code {
   font-family: "Fira Code", monospace;
 }
@@ -30,10 +26,6 @@ code {
 @supports (font-variation-settings: normal) {
   html {
     font-family: "LXGW WenKai Screen", "InterVariable", sans-serif;
-  }
-
-  .serif {
-    font-family: "Source Serif 4Variable", "Noto Serif SC", serif;
   }
 
   code {
