@@ -6,7 +6,6 @@
       "@/*": ["src/*"]
     },
     "strict": true,
-    "verbatimModuleSyntax": true,
-    "target": "ES6"
+    "verbatimModuleSyntax": true
   }
 }
