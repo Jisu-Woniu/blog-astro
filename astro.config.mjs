@@ -7,7 +7,6 @@ import prismjsPlugin from "vite-plugin-prismjs";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import purgecss from "astro-purgecss";
-import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
 export default defineConfig({
@@ -43,5 +42,5 @@ export default defineConfig({
       ,
     ],
   },
-  integrations: [prefetch(), purgecss()],
+  integrations: [purgecss()],
 });

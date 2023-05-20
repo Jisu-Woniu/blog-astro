@@ -12,7 +12,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/prefetch": "^0.2.2",
     "@astrojs/prism": "^2.1.2",
     "@fontsource/fira-code": "^4.5.13",
     "@fontsource/inter": "^4.5.15",
