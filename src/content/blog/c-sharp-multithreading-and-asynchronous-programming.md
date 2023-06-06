@@ -75,7 +75,30 @@ Hello from thread1
 
 程序可能执行顺序如下图：
 
-![手动线程管理时序][manual-thread-management]
+```mermaid
+sequenceDiagram
+
+    participant M as Main
+    participant t1
+    participant t2
+    note over M: 开始执行
+    activate M
+    M->>t1: t1 = new Thread(...)
+    M->>t2: t2 = new Thread(...)
+    M->>+t1: t1.Start()
+    M->>+t2: t2.Start()
+    M->>t1: t1.Join()
+    note over M: 线程阻塞
+    note left of t2: t2 已经完成
+    deactivate t2
+    t1-->>-M: t1 结束执行
+    M->>t2: t2.Join()
+    t2-->>M: t2 已完成，直接返回
+
+    note over M: 执行完毕
+    deactivate M
+
+```
 
 使用手动线程管理有如下缺点：
 
@@ -95,7 +118,7 @@ try
 }
 catch (Exception e)
 {
-    Console.WriteLine("Exception caught: " + e.Message);
+    Console.WriteLine($"Exception caught: {e.Message}");
 }
 
 Thread tProblem = new Thread(
@@ -113,7 +136,7 @@ try
 }
 catch (Exception e)
 {
-    Console.WriteLine("Exception caught: " + e.Message);
+    Console.WriteLine($"Exception caught: {e.Message}");
 }
 ```
 
@@ -122,7 +145,7 @@ catch (Exception e)
 ```plaintext
 Exception caught: Exception from main thread
 Unhandled exception. System.Exception: Exception from thread tProblem
-   at Program.<>c.<&lt;Main>$>b__0_0() in **.cs:line 41
+   at Program.<>c.<<Main>$>b__0_0() in **.cs:line 41
    at System.Threading.Thread.StartCallback()
 ```
 
@@ -282,7 +305,36 @@ Working...
 
 ![异步方法执行流程][async-programming-with-task]
 
-![时序图][async-programming-with-task-sequence]
+```mermaid
+sequenceDiagram
+
+    participant M as Main
+    participant U as GetUrlContentLengthAsync
+    participant S as GetStringAsync
+    Note over M: 开始执行
+    activate M
+    M->>+U: GetUrlContentLengthAsync()
+    deactivate M
+    Note over M: 挂起
+
+    U->>+S: client.GetStringAsync(...)
+    S->>U: getStringTask = ...
+
+    U->>U: DoIndependentWork()
+    deactivate U
+    Note over U: 挂起
+
+    S-)-U: await getStringTask
+    activate U
+    Note over U: 继续执行
+
+    U-)-M: await ...
+    activate M
+    Note over M: 继续执行
+    Note over M: 执行完毕
+    deactivate M
+
+```
 
 ### 使用 `Task.Run` 执行 CPU 绑定工作
 
@@ -491,6 +543,4 @@ Web 服务器可能收到大量请求，如果某个请求超时，那么可能�
 - [The perils of async void - The Old New Thing](https://devblogs.microsoft.com/oldnewthing/20170721-00/?p=96665)
 
 [multithreaded-process]: /image/c-sharp-multithreading-and-asynchronous-programming/multithreaded-process.svg
-[manual-thread-management]: /image/c-sharp-multithreading-and-asynchronous-programming/manual-thread-management.svg
 [async-programming-with-task]: /image/c-sharp-multithreading-and-asynchronous-programming/async-programming-with-task.png
-[async-programming-with-task-sequence]: /image/c-sharp-multithreading-and-asynchronous-programming/async-programming-with-task-sequence.svg

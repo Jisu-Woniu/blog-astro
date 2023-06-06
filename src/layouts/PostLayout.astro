@@ -54,16 +54,15 @@ const pubDateISO = formatISO(frontmatter.pubDate);
     import zhCN from "date-fns/locale/zh-CN/index";
     import Prism from "prismjs";
 
-    const timeElement = document.getElementById("publish-date");
-    if (timeElement) {
-      const pubDateISO = timeElement.dataset.pubdate;
-      if (pubDateISO) {
-        const relativeDate = formatDistanceToNow(parseISO(pubDateISO), {
-          addSuffix: true,
-          locale: zhCN,
-        });
-        relativeDate && (timeElement.innerText += `（${relativeDate}）`);
-      }
+    const timeElement =
+      document.querySelector<HTMLTimeElement>("time#publish-date");
+    const pubDateISO = timeElement?.dataset.pubdate;
+    if (pubDateISO) {
+      const relativeDate = formatDistanceToNow(parseISO(pubDateISO), {
+        addSuffix: true,
+        locale: zhCN,
+      });
+      relativeDate && (timeElement.innerText += `（${relativeDate}）`);
     }
 
     Prism.highlightAll(true);
