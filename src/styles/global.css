@@ -1,8 +1,8 @@
 @import "lxgw-wenkai-screen-webfont/lxgwwenkaigbscreen.css";
 @import "@fontsource/inter";
-@import "@fontsource/inter/variable.css";
+@import "@fontsource-variable/inter";
 @import "@fontsource/fira-code";
-@import "@fontsource/fira-code/variable.css";
+@import "@fontsource-variable/fira-code";
 
 :root {
   --accent: 124, 58, 237;
@@ -25,11 +25,11 @@ code {
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: "LXGW WenKai Screen", "InterVariable", sans-serif;
+    font-family: "LXGW WenKai Screen", "Inter Variable", sans-serif;
   }
 
   code {
-    font-family: "Fira CodeVariable", monospace;
+    font-family: "Fira Code Variable", monospace;
   }
 }
 

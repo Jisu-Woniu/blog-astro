@@ -1,9 +1,25 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@astrojs/prism':
     specifier: ^2.1.2
     version: 2.1.2
+  '@fontsource-variable/fira-code':
+    specifier: ^5.0.2
+    version: 5.0.2
+  '@fontsource-variable/inter':
+    specifier: ^5.0.2
+    version: 5.0.2
+  '@fontsource-variable/source-sans-3':
+    specifier: ^5.0.3
+    version: 5.0.3
+  '@fontsource-variable/source-serif-4':
+    specifier: ^5.0.3
+    version: 5.0.3
   '@fontsource/fira-code':
     specifier: ^5.0.2
     version: 5.0.2
@@ -671,6 +687,22 @@ packages:
     resolution: {integrity: sha512-6SWlXpWU5AvId8Ac7zjzmIOqMOba/JWY8XZ4A7q7Gn1Vlfg/SFFIlrtHXt9nPn4op9ZPAkl91Jao+QQv3r/ukw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource-variable/fira-code@5.0.2:
+    resolution: {integrity: sha512-VCsUoWKzUtyhOZQKjvBzga0YSsUbMrYXKPX9pL4XgogzoGRs2ELeOvCJOm5RAtX54ZXru0N/WCXWIw7v/a2OuQ==}
+    dev: false
+
+  /@fontsource-variable/inter@5.0.2:
+    resolution: {integrity: sha512-8b+AfzKPOnF+oHgPTpjILQxZUWTnccu/8saZHmMp9hVYcrYZAYZUmAhjCVdy77m19bnbWNVdeMfo63s7fjARPA==}
+    dev: false
+
+  /@fontsource-variable/source-sans-3@5.0.3:
+    resolution: {integrity: sha512-99xPt4w1Umyx3H9r5+bMb+0brjyWoX+IKrPuCPJJTF0y4EQ7irAL01tMdkCZjF3hHhFoWgCcpZQ3SgmF+ub5iA==}
+    dev: false
+
+  /@fontsource-variable/source-serif-4@5.0.3:
+    resolution: {integrity: sha512-FVI6UWvD7mn149FG9JO/X+EofiCjGs6tkPMOd7SFRNFuPps4a3vuXfQmvM0juiXCouMQ4MQYWFpfPb50nEIMJA==}
+    dev: false
 
   /@fontsource/fira-code@5.0.2:
     resolution: {integrity: sha512-T3yzwKP/JFRYdBUHjDXQfRGp9EOI7+V0uCf9ky1rZXDzMUECxuUqTfBcj60CE3oRLzzSm9fgiEGYLSvzo/S/Fw==}
