@@ -139,9 +139,11 @@ const navLinks = [
     </div>
   </nav>
   <script>
-    const buttonExpand = document.getElementById("btn-expand");
-    const buttonCollapse = document.getElementById("btn-collapse");
-    const mobileMenu = document.getElementById("mobile-menu");
+    const buttonExpand =
+      document.querySelector<HTMLButtonElement>("#btn-expand");
+    const buttonCollapse =
+      document.querySelector<HTMLButtonElement>("#btn-collapse");
+    const mobileMenu = document.querySelector<HTMLDivElement>("#mobile-menu");
     buttonExpand?.addEventListener("click", () =>
       mobileMenu?.classList.remove("hidden")
     );

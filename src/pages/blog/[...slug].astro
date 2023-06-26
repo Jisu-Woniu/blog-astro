@@ -1,22 +1,16 @@
 ---
-import type { IFrontmatter } from "@/content";
 import PostLayout from "@/layouts/PostLayout.astro";
-import { getCollection, type Render } from "astro:content";
+import type { SlugProps } from "@/content";
 
-export async function getStaticPaths() {
-  const blogEntries = await getCollection("blog");
-  return blogEntries.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }));
-}
-
-export interface Props {
-  entry: { render(): Render[".md"]; data: IFrontmatter };
-}
-
+// export interface Props {
+//   entry: { render(): Render[".md"]; data: IFrontmatter };
+// }
+type Props = SlugProps;
+export { getStaticPaths } from "@/content";
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+export type { Props as IFrontmatter };
 ---
 
 <PostLayout frontmatter={entry.data}>

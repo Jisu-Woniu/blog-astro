@@ -1,8 +1,56 @@
 ---
+import Card from "@/components/Card.astro";
 import Layout from "@/layouts/Layout.astro";
+
+interface Link {
+  name: string;
+  description: string;
+  link: string;
+}
+
+const links: Link[] = [
+  {
+    name: "Moroshima",
+    description: "别摸鱼了，快备战考研",
+    link: "https://kuroshima.eu.org/",
+  },
+  {
+    name: "Maxtune Lee",
+    description: "学弟，菜菜，带带",
+    link: "https://mxte.cc/",
+  },
+  {
+    name: "風楪fy",
+    description: "人生赢家",
+    link: "http://fengye404.top/",
+  },
+  {
+    name: "臭咸鱼",
+    description: "别瓦了，快学习",
+    link: "https://blog.cxy621.top/",
+  },
+];
 ---
 
 <Layout title="友情链接 - 极速蜗牛的博客">
   <h1>友情链接</h1>
-  <p>版块建设中，敬请期待</p>
+  {
+    links.length ? (
+      <ul role="list" class="link-card-grid">
+        {links.map((link) => (
+          <Card href={link.link} title={link.name} body={link.description} />
+        ))}
+      </ul>
+    ) : (
+      <p>版块建设中，敬请期待</p>
+    )
+  }
 </Layout>
+<style>
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>
