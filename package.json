@@ -8,10 +8,10 @@
     "start": "astro dev",
     "build": "run-p check build-only",
     "build-only": "astro build",
-    "build-ci": "playwright install && astro build",
+    "dep:playwright": "playwright install --with-deps chromium",
+    "build-ci": "run-s dep:playwright build-only",
     "check": "astro check && tsc --noEmit",
-    "preview": "astro preview",
-    "astro": "astro"
+    "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/prism": "^2.1.2",
