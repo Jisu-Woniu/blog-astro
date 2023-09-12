@@ -11,6 +11,10 @@ tags:
   - "async await"
 ---
 
+import multithreadedProcess from "@/content/blog/c-sharp-multithreading-and-asynchronous-programming/multithreaded-process.svg";
+import asyncProgrammingWithTask from "@/content/blog/c-sharp-multithreading-and-asynchronous-programming/async-programming-with-task.png";
+import { Image } from "astro:assets";
+
 ## 多线程
 
 随着计算机程序愈发复杂，程序对计算机资源的消耗日渐增长，队列式的指令处理已不能解
@@ -19,10 +23,7 @@ tags:
 现代操作系统基本都支持多进程、多线程操作。通常一个程序作为一个进程执行，一个进程
 中可以按不同任务分配多个线程。
 
-> 部分编程语言（如 Python、Kotlin）有协程（Coroutine）概念，协程是对线程的进一步
-> 细分，用于在线程内部管理、协调任务。
-
-![多线程的进程][multithreaded-process]
+{<Image src={multithreadedProcess} alt="多线程的进程" />}
 
 一个进程通常包含一个主线程，用于协调其余线程、控制用户界面等。为了避免内存泄漏等
 问题，主线程一般应等待其他线程结束后才结束。
@@ -303,7 +304,7 @@ Working...
 
 这段代码的执行流程如下图所示：
 
-![异步方法执行流程][async-programming-with-task]
+{<Image src={asyncProgrammingWithTask} alt="异步方法执行流程" />}
 
 ```mermaid
 sequenceDiagram
@@ -541,6 +542,3 @@ Web 服务器可能收到大量请求，如果某个请求超时，那么可能�
 - [C# 中的异步编程 | Microsoft Docs](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/async/)
 - [C# - Async / Await Lambdas - Stack Overflow](https://stackoverflow.com/questions/25647062/async-await-lambdas)
 - [The perils of async void - The Old New Thing](https://devblogs.microsoft.com/oldnewthing/20170721-00/?p=96665)
-
-[multithreaded-process]: /image/c-sharp-multithreading-and-asynchronous-programming/multithreaded-process.svg
-[async-programming-with-task]: /image/c-sharp-multithreading-and-asynchronous-programming/async-programming-with-task.png

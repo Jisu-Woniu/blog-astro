@@ -6,8 +6,12 @@ import rehypeKatex from "rehype-katex";
 import prismjsPlugin from "vite-plugin-prismjs";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
+// astro-purgecss issue: https://github.com/codiume/orbit/issues/312
 import purgecss from "astro-purgecss";
 import remarkMermaid from "remark-mermaidjs";
+import critters from "astro-critters";
+
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
@@ -25,7 +29,10 @@ export default defineConfig({
             tabIndex: -1,
           },
           behavior: "append",
-          content: { type: "text", value: "#" },
+          content: {
+            type: "text",
+            value: "#",
+          },
         },
       ],
       rehypeKatex,
@@ -49,5 +56,5 @@ export default defineConfig({
       ,
     ],
   },
-  integrations: [purgecss()],
+  integrations: [mdx(), critters(), purgecss()],
 });
