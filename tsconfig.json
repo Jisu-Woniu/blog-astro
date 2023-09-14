@@ -1,11 +1,10 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/strictest",
+  "exclude": ["dist/**"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    },
-    "strict": true,
-    "verbatimModuleSyntax": true
+    }
   }
 }

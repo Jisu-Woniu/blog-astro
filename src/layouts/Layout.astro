@@ -20,7 +20,7 @@ const { title, htmlClass, bodyClass } = Astro.props as Props;
 ---
 
 <!doctype html>
-<html lang="zh-CN" class:list={htmlClass}>
+<html lang="zh-CN" class={htmlClass}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -32,7 +32,7 @@ const { title, htmlClass, bodyClass } = Astro.props as Props;
       <meta property="og:image" content={InfoCard.src} />
     </slot>
   </head>
-  <body class:list={bodyClass}>
+  <body class={bodyClass}>
     <Navigation />
     <slot />
   </body>
