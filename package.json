@@ -8,7 +8,7 @@
     "start": "astro dev",
     "build": "run-s check build-only",
     "build-only": "astro build",
-    "dep:playwright": "playwright install --with-deps chromium",
+    "dep:playwright": "playwright install chromium",
     "build-ci": "run-s dep:playwright build-only",
     "check": "run-s check:astro check:ts",
     "check:astro": "astro check",
