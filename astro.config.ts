@@ -8,17 +8,20 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 // astro-purgecss issue: https://github.com/codiume/orbit/issues/312
 import purgecss from "astro-purgecss";
-import remarkMermaid from "remark-mermaidjs";
+// import remarkMermaid from "remark-mermaidjs";
+import rehypeMermaid from "rehype-mermaidjs";
 import critters from "astro-critters";
 
 import mdx from "@astrojs/mdx";
+import type { RehypePlugin } from "@astrojs/markdown-remark";
 
 // https://astro.build/config
 export default defineConfig({
   markdown: {
-    remarkPlugins: [remarkGfm, remarkSmartypants, remarkMath, remarkMermaid],
+    remarkPlugins: [remarkGfm, remarkSmartypants, remarkMath],
     rehypePlugins: [
-      // rehypeMermaid,
+      rehypeMermaid as unknown as RehypePlugin,
+      // "rehype-mermaidjs",
       rehypeSlug,
       [
         rehypeAutolinkHeadings,
