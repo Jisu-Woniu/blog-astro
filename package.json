@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "run-p check build-only",
+    "build": "run-s check build-only",
     "build-only": "astro build",
     "dep:playwright": "playwright install chromium",
     "build-ci": "run-s dep:playwright build-only",
