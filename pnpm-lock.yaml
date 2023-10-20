@@ -63,8 +63,8 @@ dependencies:
     specifier: ^1.7.0
     version: 1.7.0
   mermaid:
-    specifier: ^10.5.0
-    version: 10.5.0
+    specifier: ^10.5.1
+    version: 10.5.1
   prismjs:
     specifier: ^1.29.0
     version: 1.29.0
@@ -5578,14 +5578,14 @@ packages:
     resolution: {integrity: sha512-iShQaYYfGYakKs6fbwVjaTAaTVYm02aIvq8QZJFZMEJ18it2YMhW7QF23jLc1SgXHfVLbeWVoQ27jar2X8KP9g==}
     dependencies:
       '@fortawesome/fontawesome-free': 6.4.2
-      mermaid: 10.5.0
+      mermaid: 10.5.1
       playwright-core: 1.39.0
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /mermaid@10.5.0:
-    resolution: {integrity: sha512-9l0o1uUod78D3/FVYPGSsgV+Z0tSnzLBDiC9rVzvelPxuO80HbN1oDr9ofpPETQy9XpypPQa26fr09VzEPfvWA==}
+  /mermaid@10.5.1:
+    resolution: {integrity: sha512-+4mkGW5PptHDSae4YZ/Jw1pEOf0irrB/aCL6BwZcJPhr5+84UJBrQnHTvyPqCUz67tXkrDvSzWv4B+J2hLO78g==}
     dependencies:
       '@braintree/sanitize-url': 6.0.4
       '@types/d3-scale': 4.0.6
