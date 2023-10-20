@@ -156,11 +156,6 @@ code[class*="language-css"] {
 .line-highlight.line-highlight {
   background: rgb(193 222 241 / 20%);
   background: linear-gradient(
-    left,
-    rgb(193 222 241 / 20%) 70%,
-    rgb(221 222 241 / 0%)
-  );
-  background: linear-gradient(
     to right,
     rgb(193 222 241 / 20%) 70%,
     rgb(221 222 241 / 0%)
