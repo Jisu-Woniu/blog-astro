@@ -13,7 +13,7 @@ import Layout from "@/layouts/Layout.astro";
       <p>
         您访问的链接
         <span id="url">{Astro.url}</span>
-        不存在
+         不存在
       </p>
       <div>
         <a href="/" class="btn">带我回去</a>
@@ -33,18 +33,21 @@ import Layout from "@/layouts/Layout.astro";
     place-items: center;
     padding: 6rem 1.5rem;
   }
-  @media (min-width: 640px) {
+
+  @media (width >= 640px) {
     main {
       padding-top: 8rem;
       padding-bottom: 8rem;
     }
   }
-  @media (min-width: 1024px) {
+
+  @media (width >= 1024px) {
     main {
       padding-left: 2rem;
       padding-right: 2rem;
     }
   }
+
   .text-center {
     text-align: center;
   }
@@ -57,11 +60,13 @@ import Layout from "@/layouts/Layout.astro";
     line-height: 1.25rem;
     font-weight: 600;
     color: rgb(255 255 255);
-    box-shadow: 0 1px 2px 0 #0000000d;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
   }
+
   .btn:hover {
-    background-color: #6366f1;
+    background-color: rgb(99 102 241);
   }
+
   .btn:focus-visible {
     outline-width: 2px;
     outline-offset: 2px;

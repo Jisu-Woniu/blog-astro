@@ -1,8 +1,8 @@
-@import "lxgw-wenkai-screen-webfont/lxgwwenkaigbscreen.css";
-@import "@fontsource/inter";
-@import "@fontsource-variable/inter";
-@import "@fontsource/fira-code";
-@import "@fontsource-variable/fira-code";
+@import url("lxgw-wenkai-screen-webfont/lxgwwenkaigbscreen.css");
+@import url("@fontsource/inter");
+@import url("@fontsource-variable/inter");
+@import url("@fontsource/fira-code");
+@import url("@fontsource-variable/fira-code");
 
 :root {
   --accent: 124, 58, 237;
@@ -16,7 +16,7 @@
 
 html {
   background-color: #f1f5f9;
-  font-family: "LXGW WenKai Screen", "Inter", sans-serif;
+  font-family: "LXGW WenKai Screen", Inter, sans-serif;
 }
 
 code {

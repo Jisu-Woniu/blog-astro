@@ -81,15 +81,16 @@ const pubDateISO = formatISO(frontmatter.pubDate);
   }
 
   :not(pre) > code {
-    background-color: rgba(175, 164, 193, 0.2);
+    background-color: rgb(175 164 193 / 20%);
     padding: 0.2em 0.4em;
     border-radius: 6px;
   }
+
   blockquote {
     border: 1px solid #999;
     color: #222;
-    padding: 2px 0px 2px 20px;
-    margin: 0px;
+    padding: 2px 0 2px 20px;
+    margin: 0;
     font-style: italic;
   }
 
@@ -101,11 +102,13 @@ const pubDateISO = formatISO(frontmatter.pubDate);
   table {
     border-collapse: collapse;
   }
+
   th,
   td {
     border: 1px #222 solid;
     padding: 5px;
   }
+
   kbd {
     border: 2px solid #cdcdcd;
     border-radius: 0.25rem;

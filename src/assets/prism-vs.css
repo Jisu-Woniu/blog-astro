@@ -13,14 +13,7 @@ pre[class*="language-"] {
   word-break: normal;
   font-size: 0.9em;
   line-height: 1.2em;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
   tab-size: 4;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
   hyphens: none;
 }
 
@@ -28,13 +21,9 @@ pre > code[class*="language-"] {
   font-size: 1em;
 }
 
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection {
-  background: #c1def1;
-}
 
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection,
 pre[class*="language-"]::selection,
 pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
@@ -47,7 +36,7 @@ pre[class*="language-"] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   background-color: white;
 }
 
@@ -57,7 +46,7 @@ pre[class*="language-"] {
   padding-top: 1px;
   padding-bottom: 1px;
   background: #f8f8f8;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 
 .token.comment,
@@ -98,7 +87,7 @@ pre[class*="language-"] {
 .language-json .token.boolean,
 .language-json .token.number,
 code[class*="language-css"] {
-  color: #0000ff;
+  color: #00f;
 }
 
 .token.function {
@@ -142,11 +131,11 @@ code[class*="language-css"] {
 .token.property,
 .token.regex,
 .token.entity {
-  color: #ff0000;
+  color: #f00;
 }
 
 .token.directive.tag .tag {
-  background: #ffff00;
+  background: #ff0;
   color: #393a34;
 }
 
@@ -157,7 +146,7 @@ code[class*="language-css"] {
   border-right-color: #a5a5a5;
 }
 
-.line-numbers .line-numbers-rows > span:before {
+.line-numbers .line-numbers-rows > span::before {
   color: #2b91af;
 }
 
@@ -165,15 +154,15 @@ code[class*="language-css"] {
 * http://prismjs.com/plugins/line-highlight/
 */
 .line-highlight.line-highlight {
-  background: rgba(193, 222, 241, 0.2);
-  background: -webkit-linear-gradient(
+  background: rgb(193 222 241 / 20%);
+  background: linear-gradient(
     left,
-    rgba(193, 222, 241, 0.2) 70%,
-    rgba(221, 222, 241, 0)
+    rgb(193 222 241 / 20%) 70%,
+    rgb(221 222 241 / 0%)
   );
   background: linear-gradient(
     to right,
-    rgba(193, 222, 241, 0.2) 70%,
-    rgba(221, 222, 241, 0)
+    rgb(193 222 241 / 20%) 70%,
+    rgb(221 222 241 / 0%)
   );
 }
