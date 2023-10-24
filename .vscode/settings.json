@@ -1,4 +1,3 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "markdown.validate.ignoredLinks": ["/image/**"]
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

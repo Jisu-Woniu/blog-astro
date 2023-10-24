@@ -9,6 +9,7 @@ import "@/styles/global.css";
 import Navigation from "@/components/Navigation.astro";
 
 import InfoCard from "@/assets/info-card.png";
+import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
   title: string;
@@ -31,15 +32,15 @@ const { title, htmlClass, bodyClass } = Astro.props as Props;
       <meta property="og:title" content={title} />
       <meta property="og:image" content={InfoCard.src} />
     </slot>
+    <ViewTransitions />
   </head>
   <body class={bodyClass}>
     <Navigation />
     <slot />
+    <style>
+      .h-full {
+        height: 100%;
+      }
+    </style>
   </body>
 </html>
-
-<style>
-  .h-full {
-    height: 100%;
-  }
-</style>
