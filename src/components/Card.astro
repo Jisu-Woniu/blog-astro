@@ -2,16 +2,17 @@
 export interface Props {
   title: string;
   body: string;
-  href: string;
+  slug: string;
 }
 
-const { href, title, body } = Astro.props;
+const { slug, title, body } = Astro.props;
+const href = `/blog/${slug}`;
 ---
 
 <li class="link-card">
   <a href={href}>
     <h2>
-      {title}
+      <span transition:name={`title-${slug}`}>{title}</span>
       <span class="indicator">&gt;</span>
     </h2>
     <p>

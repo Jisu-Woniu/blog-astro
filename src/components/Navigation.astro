@@ -139,17 +139,19 @@ const navLinks = [
     </div>
   </nav>
   <script>
-    const buttonExpand =
-      document.querySelector<HTMLButtonElement>("#btn-expand");
-    const buttonCollapse =
-      document.querySelector<HTMLButtonElement>("#btn-collapse");
-    const mobileMenu = document.querySelector<HTMLDivElement>("#mobile-menu");
-    buttonExpand?.addEventListener("click", () =>
-      mobileMenu?.classList.remove("hidden"),
-    );
-    buttonCollapse?.addEventListener("click", () =>
-      mobileMenu?.classList.add("hidden"),
-    );
+    document.addEventListener("astro:page-load", () => {
+      const buttonExpand =
+        document.querySelector<HTMLButtonElement>("#btn-expand");
+      const buttonCollapse =
+        document.querySelector<HTMLButtonElement>("#btn-collapse");
+      const mobileMenu = document.querySelector<HTMLDivElement>("#mobile-menu");
+      buttonExpand?.addEventListener("click", () =>
+        mobileMenu?.classList.remove("hidden"),
+      );
+      buttonCollapse?.addEventListener("click", () =>
+        mobileMenu?.classList.add("hidden"),
+      );
+    });
   </script>
 </header>
 

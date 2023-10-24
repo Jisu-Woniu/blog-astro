@@ -2,9 +2,6 @@
 import PostLayout from "@/layouts/PostLayout.astro";
 import type { SlugProps } from "@/content";
 
-// export interface Props {
-//   entry: { render(): Render[".md"]; data: IFrontmatter };
-// }
 type Props = SlugProps;
 export { getStaticPaths } from "@/content";
 const { entry } = Astro.props;
@@ -13,6 +10,6 @@ const { Content } = await entry.render();
 export type { Props as IFrontmatter };
 ---
 
-<PostLayout frontmatter={entry.data}>
+<PostLayout frontmatter={entry.data} slug={entry.slug}>
   <Content />
 </PostLayout>

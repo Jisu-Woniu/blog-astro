@@ -11,9 +11,10 @@ import zhCN from "date-fns/locale/zh-CN/index";
 
 export interface Props {
   frontmatter: IFrontmatter;
+  slug: string;
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, slug } = Astro.props;
 
 const pubDateISO = formatISO(frontmatter.pubDate);
 ---
@@ -31,7 +32,7 @@ const pubDateISO = formatISO(frontmatter.pubDate);
     data-prismjs-copy-success="✅"
     data-prismjs-copy-error="❎"
   >
-    <h1>{frontmatter.title}</h1>
+    <h1 transition:name={`title-${slug}`}>{frontmatter.title}</h1>
     <p>
       发布于
       <time id="publish-date" data-pubdate={pubDateISO} datetime={pubDateISO}>
@@ -41,8 +42,8 @@ const pubDateISO = formatISO(frontmatter.pubDate);
 
     <hr />
     <slot />
+    <Comment />
   </main>
-  <Comment />
   <script>
     import { formatDistanceToNow, parseISO } from "date-fns";
     import zhCN from "date-fns/locale/zh-CN/index";
