@@ -6,6 +6,8 @@
 另有说明，均采用知识共享署名-相同方式共享 4.0 国际许可协议（CC BY-SA 4.0）进行许
 可。
 
+想加友链？修改[友链列表](src/pages/links.astro)，发 PR 给我吧！
+
 [![知识共享许可协议][CC BY-SA 4.0]][CONTENT_LICENSE]
 
 [CC BY-SA 4.0]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
