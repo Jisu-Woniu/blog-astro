@@ -4,7 +4,7 @@ import prismjsPlugin from "vite-plugin-prismjs";
 import purgecss from "astro-purgecss";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeKatex from "rehype-katex";
-import rehypeMermaid from "rehype-mermaidjs";
+import rehypeMermaid from "rehype-mermaid";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
@@ -54,5 +54,5 @@ export default defineConfig({
       }),
     ],
   },
-  integrations: [mdx(), critters(), purgecss()],
+  integrations: [mdx(), critters({}), purgecss()],
 });

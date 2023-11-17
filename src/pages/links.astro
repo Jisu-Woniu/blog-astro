@@ -38,7 +38,7 @@ const links: Link[] = [
     links.length ? (
       <ul role="list" class="link-card-grid">
         {links.map((link) => (
-          <Card href={link.link} title={link.name} body={link.description} />
+          <Card slug={link.link} title={link.name} body={link.description} />
         ))}
       </ul>
     ) : (

@@ -6,7 +6,7 @@ export interface Props {
 }
 
 const { slug, title, body } = Astro.props;
-const href = `/blog/${slug}`;
+const href = slug.match(/^https?:/) ? slug : `/blog/${slug}`;
 ---
 
 <li class="link-card">
