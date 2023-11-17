@@ -11,6 +11,7 @@ import remarkMath from "remark-math";
 import remarkSmartypants from "remark-smartypants";
 import { defineConfig } from "astro/config";
 import type { RehypePlugin } from "@astrojs/markdown-remark";
+import type { ViteUserConfig } from "astro";
 
 // https://astro.build/config
 export default defineConfig({
@@ -51,7 +52,7 @@ export default defineConfig({
           "show-language",
           "copy-to-clipboard",
         ],
-      }),
+      }) as unknown as ViteUserConfig["plugins"],
     ],
   },
   integrations: [mdx(), critters({}), purgecss()],
