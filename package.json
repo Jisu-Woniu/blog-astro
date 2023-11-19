@@ -4,16 +4,17 @@
   "version": "0.0.1",
   "packageManager": "pnpm@8.9.2",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "run-s check build-only",
-    "build-only": "astro build",
-    "dep:playwright": "playwright install chromium",
+    "build": "run-s check build-ci",
     "build-ci": "run-s dep:playwright build-only",
+    "build-only": "astro build",
     "check": "run-s check:astro check:ts",
     "check:astro": "astro check",
     "check:ts": "tsc --noEmit",
+    "dep:playwright": "playwright install chromium",
+    "dev": "astro dev",
+    "lint": "run-s lint:css lint:js",
     "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:js": "eslint src",
     "preview": "astro preview"
   },
   "dependencies": {

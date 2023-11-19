@@ -29,12 +29,6 @@ https://prismjs.com/download.html#themes=prism&plugins=line-highlight+line-numbe
 
 @media print {
   .line-highlight {
-    /*
-		 * This will prevent browsers from replacing the background color with white.
-		 * It's necessary because the element is layered on top of the displayed code.
-		 */
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact; /* Firefox 48~97 uses this non-standard rule. */
     print-color-adjust: exact;
   }
 }
@@ -72,6 +66,14 @@ pre[id].linkable-line-numbers span.line-numbers-rows {
   pointer-events: all;
 }
 
+.line-numbers-rows > span::before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
 pre[id].linkable-line-numbers span.line-numbers-rows > span::before {
   cursor: pointer;
 }
@@ -106,14 +108,6 @@ pre[class*="language-"].line-numbers > code {
 .line-numbers-rows > span {
   display: block;
   counter-increment: linenumber;
-}
-
-.line-numbers-rows > span::before {
-  content: counter(linenumber);
-  color: #999;
-  display: block;
-  padding-right: 0.8em;
-  text-align: right;
 }
 
 div.code-toolbar {

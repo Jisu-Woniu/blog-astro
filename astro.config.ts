@@ -9,6 +9,9 @@ import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import remarkSmartypants from "remark-smartypants";
+import autoprefixer from "autoprefixer";
+import postcssPresetEnv from "postcss-preset-env";
+import cssnano from "cssnano";
 import { defineConfig } from "astro/config";
 import type { RehypePlugin } from "@astrojs/markdown-remark";
 import type { ViteUserConfig } from "astro";
@@ -54,6 +57,11 @@ export default defineConfig({
         ],
       }) as unknown as ViteUserConfig["plugins"],
     ],
+    css: {
+      postcss: {
+        plugins: [autoprefixer, postcssPresetEnv, cssnano],
+      },
+    },
   },
   integrations: [mdx(), critters({}), purgecss()],
 });
