@@ -1,7 +1,6 @@
 ---
 import "katex/dist/katex.css";
 import "@/styles/global.css";
-import "@/assets/prism.css";
 import InfoCard from "@/assets/info-card.png";
 import type { IFrontmatter } from "@/content";
 import Comment from "@/components/Comment.astro";
@@ -26,12 +25,7 @@ const pubDateISO = formatISO(frontmatter.pubDate);
     content={`${frontmatter.title} - 极速蜗牛的博客`}
   />
   <meta slot="head" property="og:image" content={InfoCard.src} />
-  <main
-    class="line-numbers"
-    data-prismjs-copy="📋"
-    data-prismjs-copy-success="✅"
-    data-prismjs-copy-error="❎"
-  >
+  <main>
     <h1 transition:name={`title-${slug}`}>{frontmatter.title}</h1>
     <p>
       发布于
@@ -47,7 +41,6 @@ const pubDateISO = formatISO(frontmatter.pubDate);
   <script>
     import { formatDistanceToNow, parseISO } from "date-fns";
     import zhCN from "date-fns/locale/zh-CN/index";
-    import Prism from "prismjs";
 
     const timeElement =
       document.querySelector<HTMLTimeElement>("time#publish-date");
@@ -59,8 +52,6 @@ const pubDateISO = formatISO(frontmatter.pubDate);
       });
       relativeDate && (timeElement.innerText += `（${relativeDate}）`);
     }
-
-    Prism.highlightAll(true);
   </script>
 </Layout>
 
@@ -75,10 +66,9 @@ const pubDateISO = formatISO(frontmatter.pubDate);
     color: cornflowerblue;
   }
 
-  :not(pre) > code {
-    background-color: rgb(175 164 193 / 20%);
-    padding: 0.2em 0.4em;
-    border-radius: 6px;
+  a:hover,
+  a:focus {
+    color: royalblue;
   }
 
   blockquote {
@@ -87,11 +77,6 @@ const pubDateISO = formatISO(frontmatter.pubDate);
     padding: 2px 0 2px 20px;
     margin: 0;
     font-style: italic;
-  }
-
-  pre[class*="language-"] {
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px #ddd8;
   }
 
   table {
