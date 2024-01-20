@@ -6,7 +6,7 @@ import type { IFrontmatter } from "@/content";
 import Comment from "@/components/Comment.astro";
 import Layout from "./Layout.astro";
 import { formatISO, format } from "date-fns";
-import zhCN from "date-fns/locale/zh-CN/index";
+import { zhCN } from "date-fns/locale";
 
 export interface Props {
   frontmatter: IFrontmatter;
@@ -40,7 +40,7 @@ const pubDateISO = formatISO(frontmatter.pubDate);
   </main>
   <script>
     import { formatDistanceToNow, parseISO } from "date-fns";
-    import zhCN from "date-fns/locale/zh-CN/index";
+    import { zhCN } from "date-fns/locale";
 
     const timeElement =
       document.querySelector<HTMLTimeElement>("time#publish-date");
