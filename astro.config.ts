@@ -12,8 +12,8 @@ import autoprefixer from "autoprefixer";
 import postcssPresetEnv from "postcss-preset-env";
 import cssnano from "cssnano";
 import { defineConfig } from "astro/config";
-
 import expressiveCode from "astro-expressive-code";
+import min from "astro-min";
 
 // https://astro.build/config
 export default defineConfig({
@@ -49,10 +49,13 @@ export default defineConfig({
   integrations: [
     expressiveCode({
       themes: ["dark-plus", "light-plus"],
-      styleOverrides: { codeFontFamily: "'Fira Code', monospace" },
+      styleOverrides: {
+        codeFontFamily: "'Fira Code', monospace",
+      },
     }),
     mdx(),
     critters({}),
     purgecss(),
+    min(),
   ],
 });

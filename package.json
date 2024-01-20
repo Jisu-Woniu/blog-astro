@@ -13,7 +13,7 @@
     "dep:playwright": "playwright install chromium",
     "dev": "astro dev",
     "lint": "run-s lint:css lint:js",
-    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:css": "stylelint \"src/**/*.{css,scss,astro}\"",
     "lint:js": "eslint src",
     "preview": "astro preview"
   },
@@ -32,6 +32,7 @@
     "astro": "^4.2.1",
     "astro-critters": "^2.0.11",
     "astro-expressive-code": "^0.31.0",
+    "astro-min": "^1.0.0",
     "astro-purgecss": "^4.0.0",
     "date-fns": "^3.3.0",
     "katex": "^0.16.9",
