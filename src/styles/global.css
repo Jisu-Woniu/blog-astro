@@ -1,14 +1,14 @@
-@import url("lxgw-wenkai-screen-webfont/lxgwwenkaigbscreen.css");
+@import url("@fontsource/noto-sans-sc");
+@import url("@fontsource-variable/noto-sans-sc");
 @import url("@fontsource/inter");
 @import url("@fontsource-variable/inter");
 @import url("@fontsource/fira-code");
 @import url("@fontsource-variable/fira-code");
 
 :root {
-  --accent: 124, 58, 237;
   --accent-gradient: linear-gradient(
     45deg,
-    rgb(var(--accent)),
+    rgb(124 58 237),
     #da62c4 30%,
     white 60%
   );
@@ -16,20 +16,30 @@
 
 html {
   background-color: #f1f5f9;
-  font-family: "LXGW WenKai Screen", Inter, sans-serif;
+  font-family:
+    Inter,
+    "Noto Sans SC",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
 }
 
 code {
-  font-family: "Fira Code", monospace;
+  font-family: "Fira Code", ui-monospace, monospace;
+  background-color: rgb(175 184 193 / 50%);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-size: 85%;
 }
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: "LXGW WenKai Screen", "Inter Variable", sans-serif;
+    font-family: "Inter Variable", "Noto Sans SC Variable", sans-serif;
   }
 
   code {
-    font-family: "Fira Code Variable", monospace;
+    font-family: "Fira Code Variable", ui-monospace, monospace;
   }
 }
 

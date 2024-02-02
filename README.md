@@ -8,7 +8,7 @@
 
 想加友链？修改[友链列表](src/pages/links.astro)，发 PR 给我吧！
 
-[![知识共享许可协议][CC BY-SA 4.0]][CONTENT_LICENSE]
+[![知识共享许可协议][cc-by-sa-4.0]][cc-by-sa-4.0-text]
 
-[CC BY-SA 4.0]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
-[CONTENT_LICENSE]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-4.0]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
+[cc-by-sa-4.0-text]: https://creativecommons.org/licenses/by-sa/4.0/

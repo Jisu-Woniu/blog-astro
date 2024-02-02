@@ -27,7 +27,7 @@ export default defineConfig({
           properties: {
             class: "anchor-link",
             ariaHidden: true,
-            tabIndex: -1,
+            // tabIndex: -1,
           },
           behavior: "append",
           content: {
