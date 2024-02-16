@@ -142,9 +142,21 @@ devDependencies:
   prettier-plugin-astro:
     specifier: ^0.13.0
     version: 0.13.0
+  remark-frontmatter:
+    specifier: ^5.0.0
+    version: 5.0.0
+  remark-lint-maximum-line-length:
+    specifier: ^3.1.3
+    version: 3.1.3
+  remark-lint-ordered-list-marker-value:
+    specifier: ^3.1.2
+    version: 3.1.2
   remark-mdx:
     specifier: ^3.0.1
     version: 3.0.1
+  remark-preset-lint-consistent:
+    specifier: ^5.1.2
+    version: 5.1.2
   remark-preset-lint-markdown-style-guide:
     specifier: ^5.1.3
     version: 5.1.3
@@ -4506,6 +4518,12 @@ packages:
     dependencies:
       reusify: 1.0.4
 
+  /fault@2.0.1:
+    resolution: {integrity: sha512-WtySTkS4OKev5JtpHXnib4Gxiurzh5NCGvWrFaZ34m6JehfTUhKZvn9njTfw48t6JumVQOmrKqpmGcdwxnhqBQ==}
+    dependencies:
+      format: 0.2.2
+    dev: true
+
   /file-entry-cache@6.0.1:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -4589,6 +4607,11 @@ packages:
     dependencies:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
+    dev: true
+
+  /format@0.2.2:
+    resolution: {integrity: sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==}
+    engines: {node: '>=0.4.x'}
     dev: true
 
   /fraction.js@4.3.7:
@@ -5648,6 +5671,19 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /mdast-util-frontmatter@2.0.1:
+    resolution: {integrity: sha512-LRqI9+wdgC25P0URIJY9vwocIzCcksduHQ9OF2joxQoyTNVduwLAFUzjoopuRJbJAReaKrNQKAZKL3uCMugWJA==}
+    dependencies:
+      '@types/mdast': 4.0.3
+      devlop: 1.1.0
+      escape-string-regexp: 5.0.0
+      mdast-util-from-markdown: 2.0.0
+      mdast-util-to-markdown: 2.1.0
+      micromark-extension-frontmatter: 2.0.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /mdast-util-gfm-autolink-literal@2.0.0:
     resolution: {integrity: sha512-FyzMsduZZHSc3i0Px3PQcBT4WJY/X/RCtEJKuybiC6sjPqLv7h1yqAkmILZtuxMSsUyaLUWNp71+vQH2zqp5cg==}
     dependencies:
@@ -5973,6 +6009,15 @@ packages:
       micromark-util-subtokenize: 2.0.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
+
+  /micromark-extension-frontmatter@2.0.0:
+    resolution: {integrity: sha512-C4AkuM3dA58cgZha7zVnuVxBhDsbttIMiytjgsM2XbHAB2faRVaHRle40558FBN+DJcrLNCoqG5mlrpdU4cRtg==}
+    dependencies:
+      fault: 2.0.1
+      micromark-util-character: 2.1.0
+      micromark-util-symbol: 2.0.0
+      micromark-util-types: 2.0.0
+    dev: true
 
   /micromark-extension-gfm-autolink-literal@2.0.0:
     resolution: {integrity: sha512-rTHfnpt/Q7dEAK1Y5ii0W8bhfJlVJFnJMHIPisfPK3gpVNuOP0VnRl96+YJ3RYWV/P4gFeQoGKNlT3RhuvpqAg==}
@@ -7797,6 +7842,17 @@ packages:
       unist-util-visit: 4.1.2
     dev: false
 
+  /remark-frontmatter@5.0.0:
+    resolution: {integrity: sha512-XTFYvNASMe5iPN0719nPrdItC9aU0ssC4v14mH1BCi1u0n1gAocqcujWUrByftZTbLhRtiKRyjYTSIOcr69UVQ==}
+    dependencies:
+      '@types/mdast': 4.0.3
+      mdast-util-frontmatter: 2.0.1
+      micromark-extension-frontmatter: 2.0.0
+      unified: 11.0.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /remark-gfm@4.0.0:
     resolution: {integrity: sha512-U92vJgBPkbw4Zfu/IiW2oTZLSL3Zpv+uI7My2eq8JxKgqraFdU8YUGicEJCEgSbeaG+QDFqIcwwfMTOEelPxuA==}
     dependencies:
@@ -7817,6 +7873,16 @@ packages:
       unified: 10.1.2
       unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
+      unist-util-position: 4.0.4
+      unist-util-visit: 4.1.2
+    dev: true
+
+  /remark-lint-checkbox-character-style@4.1.2:
+    resolution: {integrity: sha512-5ITz+1cCuJ3Jv/Q7rKgDEucCOnIgjWDnSHPJA1tb4TI/D316h+ALbDhZIpP8gyfAm6sBAh3Pwz9XZJN2uJB5UQ==}
+    dependencies:
+      '@types/mdast': 3.0.15
+      unified: 10.1.2
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -8389,6 +8455,28 @@ packages:
       unified: 11.0.4
     transitivePeerDependencies:
       - supports-color
+
+  /remark-preset-lint-consistent@5.1.2:
+    resolution: {integrity: sha512-RQrWBFmyIkKfXtp9P1Fui7UbGSfXth9nuvRJUVnO0vfevBJe02iyMZWPokXSwkDOI/cM539wj0i3vrQupz+v5A==}
+    dependencies:
+      '@types/mdast': 3.0.15
+      remark-lint: 9.1.2
+      remark-lint-blockquote-indentation: 3.1.2
+      remark-lint-checkbox-character-style: 4.1.2
+      remark-lint-code-block-style: 3.1.2
+      remark-lint-emphasis-marker: 3.1.2
+      remark-lint-fenced-code-marker: 3.1.2
+      remark-lint-heading-style: 3.1.2
+      remark-lint-link-title-style: 3.1.2
+      remark-lint-list-item-content-indent: 3.1.2
+      remark-lint-ordered-list-marker-style: 3.1.2
+      remark-lint-rule-style: 3.1.2
+      remark-lint-strong-marker: 3.1.2
+      remark-lint-table-cell-padding: 4.1.3
+      unified: 10.1.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /remark-preset-lint-markdown-style-guide@5.1.3:
     resolution: {integrity: sha512-4zNSPoiwAh4LJCbXh2U8Q9SFUIMw0MwsYJWTXHNiD0bGIUMWYU8ATLzDpWqCkzra6Ih7rLZuqB8tQIlipcM4Hg==}

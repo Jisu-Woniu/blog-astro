@@ -456,79 +456,77 @@ Web 服务器可能收到大量请求，如果某个请求超时，那么可能�
 
 接受 `CancellationToken` 的方法可以有多种方法结束自身的执行：
 
-- 使用 `token.ThrowIfCancellationRequested()` 抛出 `OperationCanceledException`
-  异常，强制退出方法；
-- 在循环操作中监听 `token.IsCancellationRequested` 属性，如果结果为 `true`，则退
-  出循环；
-- 将 `token` 传给内层嵌套的异步操作。
+- 使用 `token.ThrowIfCancellationRequested()` 抛出 `OperationCanceledException` 异常，强制退出方法
+- 在循环操作中监听 `token.IsCancellationRequested` 属性，如果结果为 `true`，则退出循环
+- 将 `token` 传给内层嵌套的异步操作
 
 示例：
 
-1. 抛出异常：
+1.  抛出异常：
 
-   ```csharp
-   CancellationTokenSource tokenSource = new CancellationTokenSource();
-   Task t = Task.Delay(1000, tokenSource.Token);
-   tokenSource.CancelAfter(500);
-   try
-   {
-       await t;
-   }
-   catch (Exception ex)
-   {
-       Console.WriteLine(ex);
-   }
-   ```
+    ```csharp
+    CancellationTokenSource tokenSource = new CancellationTokenSource();
+    Task t = Task.Delay(1000, tokenSource.Token);
+    tokenSource.CancelAfter(500);
+    try
+    {
+        await t;
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex);
+    }
+    ```
 
-   输出：
+    输出：
 
-   ```plaintext frame="terminal"
-   System.Threading.Tasks.TaskCanceledException: A task was canceled.
-   ```
+    ```plaintext frame="terminal"
+    System.Threading.Tasks.TaskCanceledException: A task was canceled.
+    ```
 
-2. 循环监听
+2.  循环监听
 
-   ```csharp
-   CancellationTokenSource tokenSource = new CancellationTokenSource();
-   CancellationToken token = tokenSource.Token;
-   token.Register(
-       () =>
-       {
-           Console.WriteLine("Action canceled");
-       }
-   );
+    ```csharp
+    CancellationTokenSource tokenSource = new CancellationTokenSource();
+    CancellationToken token = tokenSource.Token;
+    token.Register(
+        () =>
+        {
+            Console.WriteLine("Action canceled");
+        }
+    );
 
-   // 自旋循环等待，可以替代 Thread.Sleep 进行等待操作
-   SpinWait sw = new SpinWait();
-   Task task = Task.Run(
-       () =>
-       {
-           while (!token.IsCancellationRequested)
-           {
-               Console.Write("Running...\n");
-               sw.SpinOnce();
-           }
-       },
-       token
-   );
-   tokenSource.CancelAfter(10);
-   await task;
-   ```
+    // 自旋循环等待，可以替代 Thread.Sleep 进行等待操作
+    SpinWait sw = new SpinWait();
+    Task task = Task.Run(
+        () =>
+        {
+            while (!token.IsCancellationRequested)
+            {
+                Console.Write("Running...\n");
+                sw.SpinOnce();
+            }
+        },
+        token
+    );
+    tokenSource.CancelAfter(10);
+    await task;
+    ```
 
-   可能的输出：
+    可能的输出：
 
-   ```plaintext frame="terminal"
-   Running...
-   Running...
-   Running...
-   Running...
-   Running...
-   Running...
-   Running...
-   Running...
-   Running...
-   Action canceled
-   ```
+    ```plaintext frame="terminal"
+    Running...
+    Running...
+    Running...
+    Running...
+    Running...
+    Running...
+    Running...
+    Running...
+    Running...
+    Action canceled
+    ```
 
 ## 总结
 

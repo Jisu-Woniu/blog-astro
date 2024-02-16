@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     "plugin:astro/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:mdx/recommended",
     "prettier",
   ],
   overrides: [
