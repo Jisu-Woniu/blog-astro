@@ -32,9 +32,23 @@ const { title, htmlClass, bodyClass } = Astro.props as Props;
   <body class={bodyClass}>
     <Navigation />
     <slot />
+    <div class="footer">
+      <a href="https://icp.gov.moe/?keyword=20249945" target="_blank"
+        >萌ICP备20249945号</a
+      >
+    </div>
     <style>
       .h-full {
         height: 100%;
+      }
+
+      .footer {
+        display: flex;
+        margin: 50px 0 100px;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid #dee2e6;
+        padding: 10px;
       }
     </style>
   </body>
