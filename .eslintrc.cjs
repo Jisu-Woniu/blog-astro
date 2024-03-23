@@ -5,6 +5,7 @@ module.exports = {
     "plugin:mdx/recommended",
     "prettier",
   ],
+  ignorePatterns: ["dist/", ".astro/", "node_modules/"],
   overrides: [
     {
       // Define the configuration for `.astro` file.
@@ -24,6 +25,13 @@ module.exports = {
         // override/add rules settings here, such as:
         // "astro/no-set-html-directive": "error"
         "@typescript-eslint/triple-slash-reference": 0,
+      },
+    },
+    {
+      files: ["*.md?(x)"],
+      rules: {
+        "no-unused-vars": "warn", // TODO: not sure how to fix this one for MDX
+        "@typescript-eslint/no-unused-vars": "warn",
       },
     },
   ],
