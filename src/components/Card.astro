@@ -10,7 +10,7 @@ const href = slug.match(/^https?:/) ? slug : `/blog/${slug}`;
 ---
 
 <li class="link-card">
-  <a href={href}>
+  <a href={href} data-astro-prefetch>
     <h2>
       <span transition:name={`title-${slug}`}>{title}</span>
       <span class="indicator">&gt;</span>

@@ -1,10 +1,3 @@
-@import url("@fontsource/noto-sans-sc");
-@import url("@fontsource-variable/noto-sans-sc");
-@import url("@fontsource/inter");
-@import url("@fontsource-variable/inter");
-@import url("@fontsource/fira-code");
-@import url("@fontsource-variable/fira-code");
-
 :root {
   --accent-gradient: linear-gradient(
     45deg,
@@ -35,7 +28,13 @@ code {
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: "Inter Variable", "Noto Sans SC Variable", sans-serif;
+    font-family:
+      "Inter Variable",
+      "Noto Sans SC Variable",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
   }
 
   code {

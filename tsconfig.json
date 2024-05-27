@@ -3,6 +3,7 @@
   "exclude": ["dist/**"],
   "compilerOptions": {
     "baseUrl": ".",
+    "noEmit": true,
     "paths": {
       "@/*": ["src/*"]
     }

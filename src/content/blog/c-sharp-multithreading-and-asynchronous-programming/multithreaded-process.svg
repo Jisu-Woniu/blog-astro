@@ -1,107 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="450" height="425" version="1.0">
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M395 182.5a177.5 177.5 0 1 1-355 0 177.5 177.5 0 1 1 355 0z"
-    transform="translate(-16.75 44.75)" />
-  <path
-    style="fill:#000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-    d="M394 48v350h4V48h-4z" />
-  <path style="fill-rule:evenodd;stroke:#000;stroke-width:.8pt;marker-start:none"
-    d="m396 416.464-16-27.68h32l-16 27.68z" />
-  <switch
-    style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans">
-    <text xml:space="preserve"
-      style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-      x="-235.112" y="438.111" transform="rotate(-90)" systemLanguage="id"><tspan x="-235.112" y="438.111" style="font-size:40px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Century Schoolbook L">Waktu</tspan></text>
-    <text xml:space="preserve"
-      style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-      x="-235.112" y="438.111" transform="rotate(-90)"><tspan x="-235.112" y="438.111" style="font-size:40px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Century Schoolbook L">Time</tspan></text>
-  </switch>
-  <switch
-    style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans">
-    <text xml:space="preserve"
-      style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-      x="198.408" y="35.892" systemLanguage="id"><tspan x="198.408" y="35.892" style="font-size:40px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Century Schoolbook L">Proses</tspan></text>
-    <text xml:space="preserve"
-      style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-      x="198.408" y="35.892"><tspan x="198.408" y="35.892" style="font-size:40px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Century Schoolbook L">Process</tspan></text>
-  </switch>
-  <switch
-    style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans">
-    <text xml:space="preserve"
-      style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-      x="118.408" y="125.242" systemLanguage="id"><tspan x="118.408" y="125.242" style="font-size:20px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Century Schoolbook L">Utas #1</tspan></text>
-    <text xml:space="preserve"
-      style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-      x="118.408" y="125.242"><tspan x="118.408" y="125.242" style="font-size:20px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Century Schoolbook L">Thread #1</tspan></text>
-  </switch>
-  <switch
-    style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans">
-    <text xml:space="preserve"
-      style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-      x="282.408" y="125.892" systemLanguage="id"><tspan x="282.408" y="125.892" style="font-size:20px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Century Schoolbook L">Utas #2</tspan></text>
-    <text xml:space="preserve"
-      style="font-size:12px;font-style:normal;font-weight:400;text-align:center;line-height:125%;text-anchor:middle;fill:#000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-      x="282.408" y="125.892"><tspan x="282.408" y="125.892" style="font-size:20px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Century Schoolbook L">Thread #2</tspan></text>
-  </switch>
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="translate(2.991)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="matrix(-1 0 0 1 232.991 10)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="translate(2.991 20)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="matrix(-1 0 0 1 232.991 30)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="translate(169 40)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="matrix(-1 0 0 1 399 50)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="translate(169 60)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="matrix(-1 0 0 1 399 70)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="translate(168 80)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="matrix(-1 0 0 1 398 90)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="translate(168 100)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="matrix(-1 0 0 1 398 110)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="translate(2 120)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="matrix(-1 0 0 1 232 130)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="translate(2 140)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="matrix(-1 0 0 1 232 150)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="translate(1 160)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="matrix(-1 0 0 1 231 170)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="translate(1 180)" />
-  <path
-    style="opacity:1;fill:#ccf;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-    d="M115 145a5 5 0 1 1 0-10" transform="matrix(-1 0 0 1 231 190)" />
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="425">
+    <style>
+        .C{text-anchor:middle}.E{writing-mode:lr-tb}.F{stroke-linecap:round}.G{stroke-linejoin:round}
+    </style>
+    <path fill="#ccf" stroke="#000" stroke-width="3.5"
+        d="M378.25 227.25c0 98.031-79.469 177.5-177.5 177.5s-177.5-79.469-177.5-177.5 79.469-177.5 177.5-177.5 177.5 79.469 177.5 177.5"
+        class="F G" />
+    <g fill-rule="evenodd">
+        <path d="M394 48v350h4V48z" />
+        <path stroke="#000" stroke-width=".8pt" d="m396 416.464-16-27.68h32z" />
+    </g>
+    <text xml:space="preserve" x="-235.112" y="438.111" class="C" font-family="Bitstream Vera Sans"
+        transform="rotate(270)">
+        <tspan x="-235.112" y="438.111" class="E" font-family="Century Schoolbook L" font-size="40">Time</tspan>
+    </text>
+    <text xml:space="preserve" x="198.408" y="35.892" class="C" font-family="Bitstream Vera Sans">
+        <tspan x="198.408" y="35.892" class="E" font-family="Century Schoolbook L" font-size="40">Process</tspan>
+    </text>
+    <text xml:space="preserve" x="118.408" y="125.242" class="C" font-family="Bitstream Vera Sans">
+        <tspan x="118.408" y="125.242" class="E" font-family="Century Schoolbook L" font-size="20">Thread #1</tspan>
+    </text>
+    <text xml:space="preserve" x="282.408" y="125.892" class="C" font-family="Bitstream Vera Sans">
+        <tspan x="282.408" y="125.892" class="E" font-family="Century Schoolbook L" font-size="20">Thread #2</tspan>
+    </text>
+    <path fill="#ccf" stroke="#000" stroke-width="4"
+        d="M117.991 145a5 5 0 1 1 0-10m0 20a5 5 0 1 0 0-10m0 20a5 5 0 1 1 0-10m0 20a5 5 0 1 0 0-10M284 185a5 5 0 1 1 0-10m0 20a5 5 0 1 0 0-10m0 20a5 5 0 1 1 0-10m0 20a5 5 0 1 0 0-10m-1 20a5 5 0 1 1 0-10m0 20a5 5 0 1 0 0-10m0 20a5 5 0 1 1 0-10m0 20a5 5 0 1 0 0-10m-166 20a5 5 0 1 1 0-10m0 20a5 5 0 1 0 0-10m0 20a5 5 0 1 1 0-10m0 20a5 5 0 1 0 0-10m-1 20a5 5 0 1 1 0-10m0 20a5 5 0 1 0 0-10m0 20a5 5 0 1 1 0-10m0 20a5 5 0 1 0 0-10"
+        class="F G" />
 </svg>

@@ -1,24 +1,29 @@
-import critters from "astro-critters";
 import mdx from "@astrojs/mdx";
+import critters from "astro-critters";
+import expressiveCode from "astro-expressive-code";
+import min from "astro-min";
 import purgecss from "astro-purgecss";
+import { defineConfig } from "astro/config";
+import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
+import postcssPresetEnv from "postcss-preset-env";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeKatex from "rehype-katex";
-import remarkMermaid from "remark-mermaidjs";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
+import remarkMermaid from "remark-mermaidjs";
 import remarkSmartypants from "remark-smartypants";
-import autoprefixer from "autoprefixer";
-import postcssPresetEnv from "postcss-preset-env";
-import cssnano from "cssnano";
-import { defineConfig } from "astro/config";
-import expressiveCode from "astro-expressive-code";
-import min from "astro-min";
 
 // https://astro.build/config
 export default defineConfig({
   markdown: {
-    remarkPlugins: [remarkGfm, remarkMermaid, remarkSmartypants, remarkMath],
+    remarkPlugins: [
+      remarkGfm,
+      remarkMermaid,
+      remarkSmartypants as never,
+      remarkMath,
+    ],
     rehypePlugins: [
       rehypeSlug,
       [
