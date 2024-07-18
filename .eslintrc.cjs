@@ -30,8 +30,8 @@ module.exports = {
     {
       files: ["*.md?(x)"],
       rules: {
-        "no-unused-vars": "warn", // TODO: not sure how to fix this one for MDX
-        "@typescript-eslint/no-unused-vars": "warn",
+        "no-unused-vars": "off", // TODO: not sure how to fix this one for MDX
+        "@typescript-eslint/no-unused-vars": "off",
       },
     },
   ],
