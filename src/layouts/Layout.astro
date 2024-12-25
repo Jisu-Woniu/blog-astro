@@ -9,7 +9,7 @@ import "@/styles/global.css";
 import Navigation from "@/components/Navigation.astro";
 
 import InfoCard from "@/assets/info-card.png";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 export interface Props {
   title: string;
@@ -32,7 +32,7 @@ const { title, htmlClass, bodyClass } = Astro.props as Props;
       <meta property="og:title" content={title} />
       <meta property="og:image" content={InfoCard.src} />
     </slot>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body class={bodyClass}>
     <Navigation />
