@@ -13,7 +13,7 @@ const blogEntries = await getSortedBlogCollection();
       {
         blogEntries.map((post) => (
           <Card
-            slug={post.slug}
+            id={post.id}
             title={post.data.title}
             body={post.data.description}
           />

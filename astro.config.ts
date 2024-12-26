@@ -31,7 +31,7 @@ export default defineConfig({
         {
           properties: {
             class: "anchor-link",
-            ariaHidden: true,
+            ariaHidden: "true",
           },
           behavior: "append",
           content: {

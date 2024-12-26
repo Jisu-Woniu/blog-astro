@@ -10,10 +10,10 @@ import { zhCN } from "date-fns/locale";
 
 export interface Props {
   frontmatter: IFrontmatter;
-  slug: string;
+  id: string;
 }
 
-const { frontmatter, slug } = Astro.props;
+const { frontmatter, id } = Astro.props;
 
 const pubDateISO = formatISO(frontmatter.pubDate);
 ---
@@ -26,13 +26,25 @@ const pubDateISO = formatISO(frontmatter.pubDate);
   />
   <meta slot="head" property="og:image" content={InfoCard.src} />
   <main class="content">
-    <h1 transition:name={`title-${slug}`}>{frontmatter.title}</h1>
+    <h1 transition:name={`title-${id}`}>{frontmatter.title}</h1>
     <p>
       发布于
-      <time id="publish-date" data-pubdate={pubDateISO} datetime={pubDateISO}>
-        {format(frontmatter.pubDate, "PPP H:mm", { locale: zhCN })}
-      </time>
+      <publish-time>
+        <time id="publish-date" data-pubdate={pubDateISO} datetime={pubDateISO}>
+          {format(frontmatter.pubDate, "PPP H:mm", { locale: zhCN })}
+        </time>
+      </publish-time>
     </p>
+    {
+      frontmatter.tags ? (
+        <p>
+          标签：
+          {frontmatter.tags.map((tag) => (
+            <span class="tag">{tag}</span>
+          ))}
+        </p>
+      ) : null
+    }
 
     <hr />
     <slot />
@@ -42,16 +54,22 @@ const pubDateISO = formatISO(frontmatter.pubDate);
     import { formatDistanceToNow, parseISO } from "date-fns";
     import { zhCN } from "date-fns/locale";
 
-    const timeElement =
-      document.querySelector<HTMLTimeElement>("time#publish-date");
-    const pubDateISO = timeElement?.dataset.pubdate;
-    if (pubDateISO) {
-      const relativeDate = formatDistanceToNow(parseISO(pubDateISO), {
-        addSuffix: true,
-        locale: zhCN,
-      });
-      relativeDate && (timeElement.innerText += `（${relativeDate}）`);
+    class PublishTime extends HTMLElement {
+      connectedCallback() {
+        const timeElement =
+          this.querySelector<HTMLTimeElement>("time#publish-date");
+        const pubDateISO = timeElement?.dataset.pubdate;
+        if (pubDateISO) {
+          const relativeDate = formatDistanceToNow(parseISO(pubDateISO), {
+            addSuffix: true,
+            locale: zhCN,
+          });
+          relativeDate && (timeElement.textContent += `（${relativeDate}）`);
+        }
+      }
     }
+
+    customElements.define("publish-time", PublishTime);
   </script>
 </Layout>
 
@@ -103,5 +121,13 @@ const pubDateISO = formatISO(frontmatter.pubDate);
 
   main.content img {
     max-width: 100%;
+  }
+
+  .tag {
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #f0f0f0;
+    color: #333;
   }
 </style>

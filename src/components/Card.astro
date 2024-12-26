@@ -2,17 +2,17 @@
 export interface Props {
   title: string;
   body: string;
-  slug: string;
+  id: string;
 }
 
-const { slug, title, body } = Astro.props;
-const href = slug.match(/^https?:/) ? slug : `/blog/${slug}`;
+const { id, title, body } = Astro.props;
+const href = id.match(/^https?:/) ? id : `/blog/${id}`;
 ---
 
 <li class="link-card">
   <a href={href} data-astro-prefetch>
     <h2>
-      <span transition:name={`title-${slug}`}>{title}</span>
+      <span transition:name={`title-${id}`}>{title}</span>
       <span class="indicator">&gt;</span>
     </h2>
     <p>

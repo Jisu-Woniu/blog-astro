@@ -11,10 +11,6 @@ tags:
   - "async await"
 ---
 
-import multithreadedProcess from "./c-sharp-multithreading-and-asynchronous-programming/multithreaded-process.svg";
-import asyncProgrammingWithTask from "./c-sharp-multithreading-and-asynchronous-programming/async-programming-with-task.png";
-import { Image } from "astro:assets";
-
 ## 多线程
 
 随着计算机程序愈发复杂，程序对计算机资源的消耗日渐增长，队列式的指令处理已不能解
@@ -23,7 +19,7 @@ import { Image } from "astro:assets";
 现代操作系统基本都支持多进程、多线程操作。通常一个程序作为一个进程执行，一个进程
 中可以按不同任务分配多个线程。
 
-<Image src={multithreadedProcess} alt="多线程的进程" />
+![多线程的进程](./c-sharp-multithreading-and-asynchronous-programming/multithreaded-process.svg)
 
 一个进程通常包含一个主线程，用于协调其余线程、控制用户界面等。为了避免内存泄漏等
 问题，主线程一般应等待其他线程结束后才结束。
@@ -304,7 +300,7 @@ Working...
 
 这段代码的执行流程如下图所示：
 
-<Image src={asyncProgrammingWithTask} alt="异步方法执行流程" />
+![异步方法执行流程](./c-sharp-multithreading-and-asynchronous-programming/async-programming-with-task.png)
 
 ```mermaid
 sequenceDiagram

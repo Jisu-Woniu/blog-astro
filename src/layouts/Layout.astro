@@ -12,12 +12,12 @@ import InfoCard from "@/assets/info-card.png";
 import { ClientRouter } from "astro:transitions";
 
 export interface Props {
-  title: string;
+  title?: string;
   htmlClass?: string;
   bodyClass?: string;
 }
 
-const { title, htmlClass, bodyClass } = Astro.props as Props;
+const { title = "极速蜗牛的博客", htmlClass, bodyClass } = Astro.props;
 ---
 
 <!doctype html>
