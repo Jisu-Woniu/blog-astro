@@ -78,7 +78,7 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^14.0.1",
     "stylelint-config-standard": "^36.0.1",
-    "vite": "^6.0.7"
+    "vite": "^6.0.9"
   },
   "remarkConfig": {
     "plugins": [
