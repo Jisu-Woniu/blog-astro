@@ -1,5 +1,5 @@
 import mdx from "@astrojs/mdx";
-import critters from "astro-critters";
+import critters from "@critters-rs/astro";
 import expressiveCode from "astro-expressive-code";
 import min from "astro-min";
 import purgecss from "astro-purgecss";
