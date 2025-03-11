@@ -1,5 +1,5 @@
-import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import { getCollection } from "astro:content";
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 
 export const getStaticPaths = (async () =>
   (await getCollection("blog")).map((post) => ({

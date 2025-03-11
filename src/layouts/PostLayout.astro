@@ -1,12 +1,12 @@
 ---
 import "katex/dist/katex.css";
-import "@/styles/global.css";
-import InfoCard from "@/assets/info-card.png";
-import type { IFrontmatter } from "@/content";
-import Comment from "@/components/Comment.astro";
-import Layout from "./Layout.astro";
-import { formatISO, format } from "date-fns";
+import "#/styles/global.css";
+import { format, formatISO } from "date-fns";
 import { zhCN } from "date-fns/locale";
+import InfoCard from "#/assets/info-card.png";
+import Comment from "#/components/Comment.astro";
+import type { IFrontmatter } from "#/content";
+import Layout from "./Layout.astro";
 
 export interface Props {
   frontmatter: IFrontmatter;

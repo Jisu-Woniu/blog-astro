@@ -1,5 +1,6 @@
 ---
-import snail from "@/assets/snail.svg";
+import snail from "#/assets/snail.svg";
+
 const navLinks = [
   { href: "/", text: "首页" },
   { href: "/blog/", text: "文章" },
@@ -35,7 +36,7 @@ const navLinks = [
           ></path>
         </svg>
 
-         极速蜗牛的博客
+        极速蜗牛的博客
       </a>
     </div>
     <div class="expand-container">
@@ -78,7 +79,7 @@ const navLinks = [
           >
           </path>
         </svg>
-         GitHub
+        GitHub
       </a>
     </div>
     <div id="mobile-menu" class="mobile-menu hidden">
@@ -87,7 +88,7 @@ const navLinks = [
         <div class="menu-header">
           <a href="/" class="brand">
             <img src={snail.src} aria-hidden="true" class="icon" />
-             极速蜗牛的博客
+            极速蜗牛的博客
           </a>
           <button type="button" id="btn-collapse" class="btn-collapse">
             <span class="sr-only">关闭导航栏</span>
@@ -130,7 +131,7 @@ const navLinks = [
                   >
                   </path>
                 </svg>
-                 GitHub
+                GitHub
               </a>
             </div>
           </div>
@@ -146,10 +147,10 @@ const navLinks = [
         document.querySelector<HTMLButtonElement>("#btn-collapse");
       const mobileMenu = document.querySelector<HTMLDivElement>("#mobile-menu");
       buttonExpand?.addEventListener("click", () =>
-        mobileMenu?.classList.remove("hidden"),
+        mobileMenu?.classList.remove("hidden")
       );
       buttonCollapse?.addEventListener("click", () =>
-        mobileMenu?.classList.add("hidden"),
+        mobileMenu?.classList.add("hidden")
       );
     });
   </script>
