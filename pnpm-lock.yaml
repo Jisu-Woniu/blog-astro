@@ -83,9 +83,6 @@ importers:
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
-      typescript-eslint:
-        specifier: ^8.26.1
-        version: 8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)
     devDependencies:
       '@astrojs/check':
         specifier: 0.9.4
@@ -144,12 +141,6 @@ importers:
       postcss-preset-env:
         specifier: ^10.1.5
         version: 10.1.5(postcss@8.5.3)
-      prettier:
-        specifier: ^3.5.3
-        version: 3.5.3
-      prettier-plugin-astro:
-        specifier: ^0.14.1
-        version: 0.14.1
       remark-frontmatter:
         specifier: ^5.0.0
         version: 5.0.0
@@ -171,9 +162,6 @@ importers:
       remark-preset-lint-recommended:
         specifier: ^7.0.1
         version: 7.0.1
-      remark-preset-prettier:
-        specifier: ^2.0.1
-        version: 2.0.1(prettier@3.5.3)
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
@@ -189,6 +177,9 @@ importers:
       stylelint-config-standard:
         specifier: ^37.0.0
         version: 37.0.0(stylelint@16.15.0(typescript@5.8.2))
+      typescript-eslint:
+        specifier: ^8.26.1
+        version: 8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)
       vite:
         specifier: ^6.2.1
         version: 6.2.1(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.0)
@@ -4390,12 +4381,6 @@ packages:
 
   remark-preset-lint-recommended@7.0.1:
     resolution: {integrity: sha512-j1CY5u48PtZl872BQ40uWSQMT3R4gXKp0FUgevMu5gW7hFMtvaCiDq+BfhzeR8XKKiW9nIMZGfIMZHostz5X4g==}
-
-  remark-preset-prettier@2.0.1:
-    resolution: {integrity: sha512-1+cZaM080zTlhQIvZDOj7SFWvW9zevfxsLjTZspLEsBYivMDwCyTodvNvaZLc9p5dUSMik/BjMFKicfhZXh7qg==}
-    engines: {node: '>=14.8'}
-    peerDependencies:
-      prettier: '>=1.0.0'
 
   remark-rehype@11.1.1:
     resolution: {integrity: sha512-g/osARvjkBXb6Wo0XvAeXQohVta8i84ACbenPpoSsxTOQH/Ae0/RGP4WZgnMH5pMLpsj4FG7OHmcIcXxpza8eQ==}
@@ -10037,11 +10022,13 @@ snapshots:
       '@astrojs/compiler': 2.10.4
       prettier: 3.5.3
       sass-formatter: 0.7.9
+    optional: true
 
   prettier@2.8.7:
     optional: true
 
-  prettier@3.5.3: {}
+  prettier@3.5.3:
+    optional: true
 
   prismjs@1.30.0: {}
 
@@ -10853,10 +10840,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  remark-preset-prettier@2.0.1(prettier@3.5.3):
-    dependencies:
-      prettier: 3.5.3
-
   remark-rehype@11.1.1:
     dependencies:
       '@types/hast': 3.0.4
@@ -11003,7 +10986,8 @@ snapshots:
 
   rx-lite@3.1.2: {}
 
-  s.color@0.0.15: {}
+  s.color@0.0.15:
+    optional: true
 
   sade@1.8.1:
     dependencies:
@@ -11035,6 +11019,7 @@ snapshots:
   sass-formatter@0.7.9:
     dependencies:
       suf-log: 2.5.3
+    optional: true
 
   semver@7.7.1: {}
 
@@ -11342,6 +11327,7 @@ snapshots:
   suf-log@2.5.3:
     dependencies:
       s.color: 0.0.15
+    optional: true
 
   supports-color@2.0.0: {}
 

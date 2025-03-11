@@ -1,8 +1,7 @@
 {
   "name": "blog-astro",
-  "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b",
+  "type": "module",
   "scripts": {
     "build": "run-s check \"build-ci {@}\" --",
     "build-ci": "run-s dep:playwright \"build-only {@}\" --",
@@ -15,6 +14,17 @@
     "lint:js": "eslint \"src/**/*.{md,mdx,js,ts,cjs}\"",
     "lint:md": "remark . --quiet --frail",
     "preview": "astro preview"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-mdx",
+      "remark-frontmatter",
+      "remark-preset-lint-consistent",
+      "remark-preset-lint-recommended",
+      "remark-preset-lint-markdown-style-guide",
+      ["remark-lint-maximum-line-length", false],
+      ["remark-lint-ordered-list-marker-value", "ordered"]
+    ]
   },
   "dependencies": {
     "@astrojs/mdx": "^4.1.1",
@@ -41,8 +51,7 @@
     "remark-math": "^6.0.0",
     "remark-mermaidjs": "^7.0.0",
     "remark-smartypants": "^3.0.2",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.26.1"
+    "typescript": "^5.8.2"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.4",
@@ -64,8 +73,6 @@
     "postcss": "^8.5.3",
     "postcss-html": "^1.8.0",
     "postcss-preset-env": "^10.1.5",
-    "prettier": "^3.5.3",
-    "prettier-plugin-astro": "^0.14.1",
     "remark-frontmatter": "^5.0.0",
     "remark-lint-maximum-line-length": "^4.1.1",
     "remark-lint-ordered-list-marker-value": "^4.0.1",
@@ -73,36 +80,16 @@
     "remark-preset-lint-consistent": "^6.0.1",
     "remark-preset-lint-markdown-style-guide": "^6.0.1",
     "remark-preset-lint-recommended": "^7.0.1",
-    "remark-preset-prettier": "^2.0.1",
     "sharp": "^0.33.5",
     "stylelint": "^16.15.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^15.0.0",
     "stylelint-config-standard": "^37.0.0",
+    "typescript-eslint": "^8.26.1",
     "vite": "^6.2.1"
   },
-  "remarkConfig": {
-    "plugins": [
-      "remark-mdx",
-      "remark-frontmatter",
-      "remark-preset-lint-consistent",
-      "remark-preset-lint-recommended",
-      "remark-preset-lint-markdown-style-guide",
-      [
-        "remark-lint-maximum-line-length",
-        false
-      ],
-      [
-        "remark-lint-ordered-list-marker-value",
-        "ordered"
-      ],
-      "remark-preset-prettier"
-    ]
-  },
+  "packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b",
   "pnpm": {
-    "onlyBuiltDependencies": [
-      "core-js",
-      "esbuild"
-    ]
+    "onlyBuiltDependencies": ["core-js", "esbuild"]
   }
 }
