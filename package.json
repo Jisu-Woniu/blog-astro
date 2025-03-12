@@ -9,9 +9,8 @@
     "check": "astro check",
     "dep:playwright": "playwright install chromium",
     "dev": "astro dev",
-    "lint": "run-s \"lint:css {@}\" \"lint:js {@}\" lint:md --",
-    "lint:css": "stylelint \"src/**/*.{css,scss,astro}\"",
-    "lint:js": "eslint \"src/**/*.{md,mdx,js,ts,cjs}\"",
+    "lint": "run-s \"lint:biome {@}\" lint:md --",
+    "lint:biome": "biome check",
     "lint:md": "remark . --quiet --frail",
     "preview": "astro preview"
   },
@@ -56,17 +55,10 @@
   "devDependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/markdown-remark": "^6.2.1",
-    "@eslint/js": "^9.22.0",
-    "astro-eslint-parser": "^1.2.1",
+    "@biomejs/biome": "^1.9.4",
     "autoprefixer": "^10.4.21",
-    "biome": "^0.3.3",
     "browserslist": "^4.24.4",
     "cssnano": "^7.0.6",
-    "eslint": "^9.22.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-mdx": "^3.2.0",
-    "eslint-plugin-astro": "^1.3.1",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
     "image-size": "^2.0.0",
     "npm-run-all2": "^7.0.2",
     "playwright": "^1.51.0",
@@ -85,11 +77,10 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^15.0.0",
     "stylelint-config-standard": "^37.0.0",
-    "typescript-eslint": "^8.26.1",
     "vite": "^6.2.1"
   },
   "packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b",
   "pnpm": {
-    "onlyBuiltDependencies": ["core-js", "esbuild"]
+    "onlyBuiltDependencies": ["@biomejs/biome", "esbuild"]
   }
 }
