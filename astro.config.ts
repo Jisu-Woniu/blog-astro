@@ -9,10 +9,10 @@ import cssnano from "cssnano";
 import postcssPresetEnv from "postcss-preset-env";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeKatex from "rehype-katex";
+import rehypeMermaid from "rehype-mermaid";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
-import remarkMermaid from "remark-mermaidjs";
 import remarkSmartypants from "remark-smartypants";
 
 // https://astro.build/config
@@ -20,11 +20,12 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [
       remarkGfm,
-      remarkMermaid,
+      // remarkMermaid,
       remarkSmartypants as never,
       remarkMath,
     ],
     rehypePlugins: [
+      rehypeMermaid,
       rehypeSlug,
       [
         rehypeAutolinkHeadings,
