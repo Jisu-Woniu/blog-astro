@@ -32,15 +32,15 @@
     ]
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.2.5",
+    "@astrojs/mdx": "^4.2.6",
     "@critters-rs/astro": "^1.1.2",
-    "@fontsource-variable/fira-code": "^5.2.5",
+    "@fontsource-variable/fira-code": "^5.2.6",
     "@fontsource-variable/inter": "^5.2.5",
     "@fontsource-variable/noto-sans-sc": "^5.2.5",
-    "@fontsource/fira-code": "^5.2.5",
+    "@fontsource/fira-code": "^5.2.6",
     "@fontsource/inter": "^5.2.5",
     "@fontsource/noto-sans-sc": "^5.2.5",
-    "astro": "^5.7.7",
+    "astro": "^5.7.10",
     "astro-expressive-code": "^0.41.2",
     "astro-min": "1.3.1",
     "astro-purgecss": "^5.2.2",
@@ -82,7 +82,7 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^16.0.0",
     "stylelint-config-standard": "^38.0.0",
-    "vite": "^6.3.4"
+    "vite": "^6.3.5"
   },
   "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f",
   "pnpm": {
