@@ -10,40 +10,40 @@ importers:
     dependencies:
       '@astrojs/mdx':
         specifier: ^4.3.0
-        version: 4.3.0(astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))
+        version: 4.3.0(astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))
       '@critters-rs/astro':
         specifier: ^1.1.2
-        version: 1.1.2(astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))
+        version: 1.1.2(astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))
       '@fontsource-variable/fira-code':
         specifier: ^5.2.6
         version: 5.2.6
       '@fontsource-variable/inter':
-        specifier: ^5.2.5
-        version: 5.2.5
+        specifier: ^5.2.6
+        version: 5.2.6
       '@fontsource-variable/noto-sans-sc':
         specifier: ^5.2.5
-        version: 5.2.5
+        version: 5.2.6
       '@fontsource/fira-code':
         specifier: ^5.2.6
         version: 5.2.6
       '@fontsource/inter':
         specifier: ^5.2.5
-        version: 5.2.5
+        version: 5.2.6
       '@fontsource/noto-sans-sc':
         specifier: ^5.2.5
-        version: 5.2.5
+        version: 5.2.6
       astro:
         specifier: ^5.8.1
-        version: 5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
+        version: 5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
       astro-expressive-code:
         specifier: ^0.41.2
-        version: 0.41.2(astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))
+        version: 0.41.2(astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))
       astro-min:
         specifier: 1.3.1
-        version: 1.3.1(astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))
+        version: 1.3.1(astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))
       astro-purgecss:
         specifier: ^5.2.2
-        version: 5.2.2(astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))(purgecss@7.0.2)
+        version: 5.2.3(astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))(purgecss@7.0.2)
       date-fns:
         specifier: 4.1.0
         version: 4.1.0
@@ -116,7 +116,7 @@ importers:
         version: 1.8.0
       postcss-preset-env:
         specifier: ^10.1.6
-        version: 10.2.0(postcss@8.5.4)
+        version: 10.2.1(postcss@8.5.4)
       remark-frontmatter:
         specifier: ^5.0.0
         version: 5.0.0
@@ -173,6 +173,9 @@ packages:
 
   '@astrojs/compiler@2.12.0':
     resolution: {integrity: sha512-7bCjW6tVDpUurQLeKBUN9tZ5kSv5qYrGmcn0sG0IwacL7isR2ZbyyA3AdZ4uxsuUFOS2SlgReTH7wkxO6zpqWA==}
+
+  '@astrojs/compiler@2.12.2':
+    resolution: {integrity: sha512-w2zfvhjNCkNMmMMOn5b0J8+OmUaBL1o40ipMvqcG6NRpdC+lKxmTi48DT8Xw0SzJ3AfmeFLB45zXZXtmbsjcgw==}
 
   '@astrojs/internal-helpers@0.6.1':
     resolution: {integrity: sha512-l5Pqf6uZu31aG+3Lv8nl/3s4DbUzdlxTWDof4pEpto6GUJNhhCbelVi9dEyurOVyqaelwmS9oSyOWOENSfgo9A==}
@@ -963,20 +966,20 @@ packages:
   '@fontsource-variable/fira-code@5.2.6':
     resolution: {integrity: sha512-TZe+3xOB0JofZOTNeITYVsD1y/OiFucwTmcmhC19mj+GOgCnNkbp7bb1Jobfg+HjlAHr11HdptENKu0B+VkWLg==}
 
-  '@fontsource-variable/inter@5.2.5':
-    resolution: {integrity: sha512-TrWffUAFOnT8zroE9YmGybagoOgM/HjRqMQ8k9R0vVgXlnUh/vnpbGPAS/Caz1KIlOPnPGh6fvJbb7DHbFCncA==}
+  '@fontsource-variable/inter@5.2.6':
+    resolution: {integrity: sha512-jks/bficUPQ9nn7GvXvHtlQIPudW7Wx8CrlZoY8bhxgeobNxlQan8DclUJuYF2loYRrGpfrhCIZZspXYysiVGg==}
 
-  '@fontsource-variable/noto-sans-sc@5.2.5':
-    resolution: {integrity: sha512-TRxlLdbTMNq7XbTQN6XYsx8fdlg9MGZE5tVGzqCRi3audF4yugjino1NuwaKd5La+063qTSFXoRJf+sBv1ATXg==}
+  '@fontsource-variable/noto-sans-sc@5.2.6':
+    resolution: {integrity: sha512-PbDg8YG05A/8mFiII8lqK0Nvn5gDbCcvDctwNQjIFaBptLFNXDofmnocvki+A4ss3VxdYCyG4xznauMPQi+/RA==}
 
   '@fontsource/fira-code@5.2.6':
     resolution: {integrity: sha512-wCkIpPm0BqlkCPLYeY4Vui96ODmVUV0/GpEe3OfJ4v8EJn/BF2SlyxvarFsTs1CKiGjrO2cXlIZbBrKi9F+hUQ==}
 
-  '@fontsource/inter@5.2.5':
-    resolution: {integrity: sha512-kbsPKj0S4p44JdYRFiW78Td8Ge2sBVxi/PIBwmih+RpSXUdvS9nbs1HIiuUSPtRMi14CqLEZ/fbk7dj7vni1Sg==}
+  '@fontsource/inter@5.2.6':
+    resolution: {integrity: sha512-CZs9S1CrjD0jPwsNy9W6j0BhsmRSQrgwlTNkgQXTsAeDRM42LBRLo3eo9gCzfH4GvV7zpyf78Ozfl773826csw==}
 
-  '@fontsource/noto-sans-sc@5.2.5':
-    resolution: {integrity: sha512-rYAl3Alcjo2PnI0sqzRfnA022H8yWePNrjYalApQwYE+fFlaXmD6Mm3E9wmJCpmJM8clwhQWq/E8IlPl1bmZHQ==}
+  '@fontsource/noto-sans-sc@5.2.6':
+    resolution: {integrity: sha512-hk0xVQ+mL/W0rXDhBhud2U5te/slsQKcaU+3Ni6ZxeFP1jJmcNmxHEZOG5DjLBOi0L//0R5Nwvn6ebTiZrwVZw==}
 
   '@fortawesome/fontawesome-free@6.7.2':
     resolution: {integrity: sha512-JUOtgFW6k9u4Y+xeIaEiLr3+cjoUPiAuLXoyKOJSia6Duzb7pq+A76P9ZdPDoAoxHdHzq6gE9/jKBGXlZT8FbA==}
@@ -1632,14 +1635,14 @@ packages:
     peerDependencies:
       astro: '*'
 
-  astro-purgecss@5.2.2:
-    resolution: {integrity: sha512-lL4JqBlIyRTj6CQPJrGRWJYX6OzyGBEGjLwxmgSHALn0xKsU0zf9X4Lnd+L+SM0wa+o7UbD9wXMhmK42sjXl8g==}
+  astro-purgecss@5.2.3:
+    resolution: {integrity: sha512-JrGQs37gQRn86X6rUJBg4ujqR++5J6uXFK0HF+W2Yaja+ZvGtIHFdw6JsgoAnzn+XtKB/hsiPzSIqO5FZfU0jQ==}
     peerDependencies:
       astro: ^5.0.0
       purgecss: ^7.0.0
 
-  astro@5.8.1:
-    resolution: {integrity: sha512-lkBg1smMRFW+FQ6i92SgEN53o4+ItRjlRt6Ck+rEjmTcb57Bid7faTNKUQNYuNnxiesTWw3NJDyVPQPbfKDyfw==}
+  astro@5.9.1:
+    resolution: {integrity: sha512-wxoJcTbuDZNFSv6EaL0PAlrp0Wx6VnOAULCXvy0scsV70oWMeUkdxuBxfO54JxO5Qgyvwj9h99y6E0elqOpGtA==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3158,8 +3161,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-custom-properties@14.0.5:
-    resolution: {integrity: sha512-UWf/vhMapZatv+zOuqlfLmYXeOhhHLh8U8HAKGI2VJ00xLRYoAJh4xv8iX6FB6+TLXeDnm0DBLMi00E0hodbQw==}
+  postcss-custom-properties@14.0.6:
+    resolution: {integrity: sha512-fTYSp3xuk4BUeVhxCSJdIPhDLpJfNakZKoiTDx7yRGCdlZrSJR7mWKVOBS4sBF+5poPQFMj2YdXx1VHItBGihQ==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -3382,8 +3385,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-preset-env@10.2.0:
-    resolution: {integrity: sha512-cl13sPBbSqo1Q7Ryb19oT5NZO5IHFolRbIMdgDq4f9w1MHYiL6uZS7uSsjXJ1KzRIcX5BMjEeyxmAevVXENa3Q==}
+  postcss-preset-env@10.2.1:
+    resolution: {integrity: sha512-mDInnlm4mYhmR0S79hNLzseW9nx4Ihd8s15K99iu6u6QhoSQgqWX9Oj6nTd/8Dz3b0T7v2JSrfnXsDfv9TFvDg==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -4449,6 +4452,8 @@ snapshots:
 
   '@astrojs/compiler@2.12.0': {}
 
+  '@astrojs/compiler@2.12.2': {}
+
   '@astrojs/internal-helpers@0.6.1': {}
 
   '@astrojs/language-server@2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.8.3)':
@@ -4503,12 +4508,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.0(astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))':
+  '@astrojs/mdx@4.3.0(astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.2
       '@mdx-js/mdx': 3.1.0(acorn@8.14.1)
       acorn: 8.14.1
-      astro: 5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -4623,10 +4628,10 @@ snapshots:
 
   '@chevrotain/utils@11.0.3': {}
 
-  '@critters-rs/astro@1.1.2(astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))':
+  '@critters-rs/astro@1.1.2(astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))':
     dependencies:
       '@critters-rs/critters': 1.1.2
-      astro: 5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
       chalk: 5.4.1
 
   '@critters-rs/critters-darwin-arm64@1.1.2':
@@ -5137,15 +5142,15 @@ snapshots:
 
   '@fontsource-variable/fira-code@5.2.6': {}
 
-  '@fontsource-variable/inter@5.2.5': {}
+  '@fontsource-variable/inter@5.2.6': {}
 
-  '@fontsource-variable/noto-sans-sc@5.2.5': {}
+  '@fontsource-variable/noto-sans-sc@5.2.6': {}
 
   '@fontsource/fira-code@5.2.6': {}
 
-  '@fontsource/inter@5.2.5': {}
+  '@fontsource/inter@5.2.6': {}
 
-  '@fontsource/noto-sans-sc@5.2.5': {}
+  '@fontsource/noto-sans-sc@5.2.6': {}
 
   '@fortawesome/fontawesome-free@6.7.2': {}
 
@@ -5763,25 +5768,25 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.41.2(astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)):
+  astro-expressive-code@0.41.2(astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)):
     dependencies:
-      astro: 5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
       rehype-expressive-code: 0.41.2
 
-  astro-min@1.3.1(astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)):
+  astro-min@1.3.1(astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)):
     dependencies:
       '@redwerkz/html-min': 0.15.1
-      astro: 5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
       svgo: 3.3.2
 
-  astro-purgecss@5.2.2(astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))(purgecss@7.0.2):
+  astro-purgecss@5.2.3(astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))(purgecss@7.0.2):
     dependencies:
-      astro: 5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
       purgecss: 7.0.2
 
-  astro@5.8.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.9.1(@types/node@22.15.29)(jiti@2.4.2)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
-      '@astrojs/compiler': 2.12.0
+      '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
       '@astrojs/markdown-remark': 6.3.2
       '@astrojs/telemetry': 3.3.0
@@ -7869,7 +7874,7 @@ snapshots:
       '@csstools/media-query-list-parser': 4.0.3(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
       postcss: 8.5.4
 
-  postcss-custom-properties@14.0.5(postcss@8.5.4):
+  postcss-custom-properties@14.0.6(postcss@8.5.4):
     dependencies:
       '@csstools/cascade-layer-name-parser': 2.0.5(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
@@ -8080,7 +8085,7 @@ snapshots:
       postcss: 8.5.4
       postcss-value-parser: 4.2.0
 
-  postcss-preset-env@10.2.0(postcss@8.5.4):
+  postcss-preset-env@10.2.1(postcss@8.5.4):
     dependencies:
       '@csstools/postcss-cascade-layers': 5.0.1(postcss@8.5.4)
       '@csstools/postcss-color-function': 4.0.10(postcss@8.5.4)
@@ -8128,7 +8133,7 @@ snapshots:
       postcss-color-hex-alpha: 10.0.0(postcss@8.5.4)
       postcss-color-rebeccapurple: 10.0.0(postcss@8.5.4)
       postcss-custom-media: 11.0.6(postcss@8.5.4)
-      postcss-custom-properties: 14.0.5(postcss@8.5.4)
+      postcss-custom-properties: 14.0.6(postcss@8.5.4)
       postcss-custom-selectors: 8.0.5(postcss@8.5.4)
       postcss-dir-pseudo-class: 9.0.1(postcss@8.5.4)
       postcss-double-position-gradients: 6.0.2(postcss@8.5.4)
@@ -8214,7 +8219,7 @@ snapshots:
 
   prettier-plugin-astro@0.14.1:
     dependencies:
-      '@astrojs/compiler': 2.12.0
+      '@astrojs/compiler': 2.12.2
       prettier: 3.5.3
       sass-formatter: 0.7.9
     optional: true
