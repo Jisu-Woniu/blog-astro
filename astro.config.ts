@@ -1,9 +1,9 @@
 import mdx from "@astrojs/mdx";
 import critters from "@critters-rs/astro";
+import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
 import min from "astro-min";
 import purgecss from "astro-purgecss";
-import { defineConfig } from "astro/config";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
 import postcssPresetEnv from "postcss-preset-env";

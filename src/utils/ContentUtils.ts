@@ -1,4 +1,5 @@
 import { getCollection } from "astro:content";
+
 const getSortedBlogCollection = () =>
   getCollection("blog").then((collection) =>
     collection.sort(

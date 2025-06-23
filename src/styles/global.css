@@ -9,8 +9,9 @@
 
 html {
   background-color: #f1f5f9;
-  font-family: Inter, "Noto Sans SC", system-ui, -apple-system,
-    BlinkMacSystemFont, sans-serif;
+  font-family:
+    Inter, "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
 }
 
 code {
@@ -23,8 +24,9 @@ code {
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: "Inter Variable", "Noto Sans SC Variable", system-ui,
-      -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family:
+      "Inter Variable", "Noto Sans SC Variable", system-ui, -apple-system,
+      BlinkMacSystemFont, sans-serif;
   }
 
   code {
