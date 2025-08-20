@@ -47,7 +47,7 @@
     "date-fns": "4.1.0",
     "katex": "^0.16.22",
     "lxgw-wenkai-screen-webfont": "^1.7.0",
-    "mermaid": "^11.9.0",
+    "mermaid": "^11.10.0",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-katex": "^7.0.1",
     "rehype-mermaid": "^3.0.0",
