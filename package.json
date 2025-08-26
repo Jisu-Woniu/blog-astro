@@ -4,10 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "run-s check \"build-ci {@}\" --",
-    "build-ci": "run-s dep:playwright \"build-only {@}\" --",
-    "build-only": "astro build",
+    "build-ci": "astro build",
     "check": "astro check",
-    "dep:playwright": "playwright install chromium",
     "dev": "astro dev",
     "lint": "run-s \"lint:biome {@}\" lint:md --",
     "lint:biome": "biome check",
@@ -61,6 +59,7 @@
     "@astrojs/check": "0.9.4",
     "@astrojs/markdown-remark": "^6.3.6",
     "@biomejs/biome": "^2.2.2",
+    "@playwright/browser-chromium": "^1.55.0",
     "autoprefixer": "^10.4.21",
     "browserslist": "^4.25.3",
     "cssnano": "^7.1.1",
@@ -88,6 +87,7 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "@biomejs/biome",
+      "@playwright/browser-chromium",
       "esbuild",
       "sharp"
     ]

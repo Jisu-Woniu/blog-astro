@@ -90,6 +90,9 @@ importers:
       '@biomejs/biome':
         specifier: ^2.2.2
         version: 2.2.2
+      '@playwright/browser-chromium':
+        specifier: ^1.55.0
+        version: 1.55.0
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -1119,6 +1122,10 @@ packages:
 
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
+
+  '@playwright/browser-chromium@1.55.0':
+    resolution: {integrity: sha512-HxG0+6v8NGLFLYMxrGb4T4DAmKwwx6C0V3uIn/i91tOVqcNnaBBllhpxLEqXCnxjprL3HDDMXsVPjk1/vsCVAw==}
+    engines: {node: '>=18'}
 
   '@redwerkz/html-min@0.15.1':
     resolution: {integrity: sha512-Kwi6DSoOKI6q2oyt0kVTfWOBcQHBychE1BvOEyVF/j+nJjjRxEWvA0b0wx+p9ovM46P8CHD/8Y3lptYiAteZrQ==}
@@ -5233,6 +5240,10 @@ snapshots:
       fastq: 1.19.1
 
   '@oslojs/encoding@1.1.0': {}
+
+  '@playwright/browser-chromium@1.55.0':
+    dependencies:
+      playwright-core: 1.55.0
 
   '@redwerkz/html-min@0.15.1':
     optionalDependencies:
