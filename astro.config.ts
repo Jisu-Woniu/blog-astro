@@ -1,5 +1,4 @@
 import mdx from "@astrojs/mdx";
-import critters from "@critters-rs/astro";
 import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
 import min from "astro-min";
@@ -59,7 +58,6 @@ export default defineConfig({
       },
     }),
     mdx(),
-    critters({}),
     purgecss(),
     min(),
   ],

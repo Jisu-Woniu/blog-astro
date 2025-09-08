@@ -1,12 +1,7 @@
 @import url("./fonts.css");
 
 :root {
-  --accent-gradient: linear-gradient(
-    45deg,
-    rgb(124 58 237),
-    #da62c4 30%,
-    white 60%
-  );
+  --accent-gradient: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
 }
 
 html {
