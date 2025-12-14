@@ -94,7 +94,6 @@ sequenceDiagram
 
     note over M: 执行完毕
     deactivate M
-
 ```
 
 使用手动线程管理有如下缺点：
@@ -330,7 +329,6 @@ sequenceDiagram
     Note over M: 继续执行
     Note over M: 执行完毕
     deactivate M
-
 ```
 
 ### 使用 `Task.Run` 执行 CPU 绑定工作

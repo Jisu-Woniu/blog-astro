@@ -12,8 +12,8 @@ import Layout from "#/layouts/Layout.astro";
       <h1>Uh oh，页面走丢了！</h1>
       <p>
         您访问的链接
-        <span id="url">{Astro.url}</span>
-         不存在
+        <span id="url"></span>
+        不存在
       </p>
       <div>
         <a href="/" class="btn">带我回去</a>
@@ -21,8 +21,7 @@ import Layout from "#/layouts/Layout.astro";
     </div>
   </main>
   <script>
-    (document.getElementById("url") as HTMLSpanElement).innerText =
-      location.href;
+    document.querySelector("span#url")!.textContent = location.href;
   </script>
 </Layout>
 

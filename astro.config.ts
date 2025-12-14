@@ -17,12 +17,7 @@ import remarkSmartypants from "remark-smartypants";
 // https://astro.build/config
 export default defineConfig({
   markdown: {
-    remarkPlugins: [
-      remarkGfm,
-      // remarkMermaid,
-      remarkSmartypants as never,
-      remarkMath,
-    ],
+    remarkPlugins: [remarkGfm, remarkSmartypants as never, remarkMath],
     rehypePlugins: [
       rehypeMermaid,
       rehypeSlug,
