@@ -59,7 +59,7 @@
     "@astrojs/markdown-remark": "^6.3.10",
     "@biomejs/biome": "^2.3.8",
     "@playwright/browser-chromium": "^1.57.0",
-    "autoprefixer": "^10.4.22",
+    "autoprefixer": "^10.4.23",
     "browserslist": "^4.28.1",
     "cssnano": "^7.1.2",
     "image-size": "^2.0.2",
@@ -80,7 +80,7 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^17.0.0",
     "stylelint-config-standard": "^39.0.1",
-    "vite": "^7.2.7"
+    "vite": "^7.3.0"
   },
   "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501",
   "pnpm": {
