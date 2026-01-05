@@ -57,7 +57,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.6",
     "@astrojs/markdown-remark": "^6.3.10",
-    "@biomejs/biome": "^2.3.10",
+    "@biomejs/biome": "^2.3.11",
     "@playwright/browser-chromium": "^1.57.0",
     "autoprefixer": "^10.4.23",
     "browserslist": "^4.28.1",
@@ -67,7 +67,7 @@
     "playwright": "^1.57.0",
     "postcss": "^8.5.6",
     "postcss-html": "^1.8.0",
-    "postcss-preset-env": "^10.5.0",
+    "postcss-preset-env": "^10.6.0",
     "remark-frontmatter": "^5.0.0",
     "remark-lint-maximum-line-length": "^4.1.1",
     "remark-lint-ordered-list-marker-value": "^4.0.1",
