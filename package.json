@@ -57,7 +57,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.6",
     "@astrojs/markdown-remark": "^6.3.10",
-    "@biomejs/biome": "^2.3.13",
+    "@biomejs/biome": "^2.3.14",
     "@playwright/browser-chromium": "^1.58.1",
     "autoprefixer": "^10.4.24",
     "browserslist": "^4.28.1",
@@ -76,7 +76,7 @@
     "remark-preset-lint-markdown-style-guide": "^6.0.1",
     "remark-preset-lint-recommended": "^7.0.1",
     "sharp": "^0.34.5",
-    "stylelint": "^17.1.0",
+    "stylelint": "^17.1.1",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^18.0.0",
     "stylelint-config-standard": "^40.0.0",
