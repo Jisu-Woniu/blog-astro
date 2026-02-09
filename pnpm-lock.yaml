@@ -61,7 +61,7 @@ importers:
         version: 7.0.1
       rehype-mermaid:
         specifier: ^3.0.0
-        version: 3.0.0(playwright@1.58.1)
+        version: 3.0.0(playwright@1.58.2)
       rehype-slug:
         specifier: ^6.0.0
         version: 6.0.0
@@ -88,8 +88,8 @@ importers:
         specifier: ^2.3.14
         version: 2.3.14
       '@playwright/browser-chromium':
-        specifier: ^1.58.1
-        version: 1.58.1
+        specifier: ^1.58.2
+        version: 1.58.2
       autoprefixer:
         specifier: ^10.4.24
         version: 10.4.24(postcss@8.5.6)
@@ -106,8 +106,8 @@ importers:
         specifier: ^8.0.4
         version: 8.0.4
       playwright:
-        specifier: ^1.58.1
-        version: 1.58.1
+        specifier: ^1.58.2
+        version: 1.58.2
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -115,8 +115,8 @@ importers:
         specifier: ^1.8.1
         version: 1.8.1
       postcss-preset-env:
-        specifier: ^11.1.2
-        version: 11.1.2(postcss@8.5.6)
+        specifier: ^11.1.3
+        version: 11.1.3(postcss@8.5.6)
       remark-frontmatter:
         specifier: ^5.0.0
         version: 5.0.0
@@ -170,6 +170,9 @@ packages:
 
   '@astrojs/compiler@2.13.0':
     resolution: {integrity: sha512-mqVORhUJViA28fwHYaWmsXSzLO9osbdZ5ImUfxBarqsYdMlPbqAqGJCxsNzvppp1BEzc1mJNjOVvQqeDN8Vspw==}
+
+  '@astrojs/compiler@2.13.1':
+    resolution: {integrity: sha512-f3FN83d2G/v32ipNClRKgYv30onQlMZX1vCeZMjPsMMPl1mDpmbl0+N5BYo4S/ofzqJyS5hvwacEo0CCVDn/Qg==}
 
   '@astrojs/internal-helpers@0.7.5':
     resolution: {integrity: sha512-vreGnYSSKhAjFJCWAwe/CNhONvoc5lokxtRoZims+0wa3KbHBdPHSSthJsKxPd8d/aic6lWKpRTYGY/hsgK6EA==}
@@ -581,8 +584,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  '@csstools/postcss-text-decoration-shorthand@5.0.1':
-    resolution: {integrity: sha512-yH9VyYE1LFLfyp6fYMLSUVON7vILzp1U2NkiCEIi7FM0M5thKd4XJJioD2a2a4t5sHwKesVaGyg89k2Hf1z0Sg==}
+  '@csstools/postcss-text-decoration-shorthand@5.0.2':
+    resolution: {integrity: sha512-0VUTt79lfQ2LGQLfyOBeqpinDLzOf3w+tlA1Re/KjSOc86H6tRz6TeXbISrBSJlfM1fYKNmBNw+ON8Ovy6aNeg==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       postcss: ^8.4
@@ -1142,9 +1145,9 @@ packages:
     resolution: {integrity: sha512-WMz71T1JS624nWj2n2fnYAuPovhv7EUhk69R6i9dsVyzxt5eM3bjwvgk9L+APE1TRscGysAVMANkB0jh0LQZrQ==}
     engines: {node: 20 || >=22}
 
-  '@isaacs/cliui@8.0.2':
-    resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
-    engines: {node: '>=12'}
+  '@isaacs/cliui@9.0.0':
+    resolution: {integrity: sha512-AokJm4tuBHillT+FpMtxQ60n8ObyXBatq7jD2/JA9dxbDDokKQm8KMht5ibGzLVU9IJDIKK4TPKgMHEYMn3lMg==}
+    engines: {node: '>=18'}
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
@@ -1194,8 +1197,8 @@ packages:
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
 
-  '@playwright/browser-chromium@1.58.1':
-    resolution: {integrity: sha512-L0hO/dvKTjiEyW+ReRdmw1D389qa9XkCCGH58MaSpMdGtHVJzbTsHpAN+fWcAO8Fdc+vTQTZQzjq1uZoEKOGmQ==}
+  '@playwright/browser-chromium@1.58.2':
+    resolution: {integrity: sha512-/HHFVVP2pzEtqBVOFRoWlDtBoO8bzIWOqS62APdm3OhYbE2+kVUs/ALpkevvAKKfY0DMDVezYN22bDBh77UQ9Q==}
     engines: {node: '>=18'}
 
   '@redwerkz/html-min@0.15.1':
@@ -2104,9 +2107,6 @@ packages:
     resolution: {integrity: sha512-2QF/g9/zTaPDc3BjNcVTGoBbXBgYfMTTceLaYcFJ/W9kggFUkhxD/hMEeuLKbugyef9SqAx8cpgwlIP/jinUTA==}
     engines: {node: '>=4'}
 
-  eastasianwidth@0.2.0:
-    resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
-
   electron-to-chromium@1.5.286:
     resolution: {integrity: sha512-9tfDXhJ4RKFNerfjdCcZfufu49vg620741MNs26a9+bhLThdB+plgMeou98CAaHu/WATj2iHOOHTp1hWtABj2A==}
 
@@ -2118,9 +2118,6 @@ packages:
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
-
-  emoji-regex@9.2.2:
-    resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
 
   entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
@@ -2498,8 +2495,8 @@ packages:
     resolution: {integrity: sha512-LpB/54B+/2J5hqQ7imZHfdU31OlgQqx7ZicVlkm9kzg9/w8GKLEcFfJl/t7DCEDueOyBAD6zCCwTO6Fzs0NoEQ==}
     engines: {node: '>=16'}
 
-  jackspeak@4.1.1:
-    resolution: {integrity: sha512-zptv57P3GpL+O0I7VdMJNBZCu+BPHVQUk55Ft8/QCJjTVxrnJHuVuX/0Bl2A6/+2oyR/ZMEuFKwmzqqZ/U5nPQ==}
+  jackspeak@4.2.3:
+    resolution: {integrity: sha512-ykkVRwrYvFm1nb2AJfKKYPr0emF6IiXDYUaFx4Zn9ZuIH7MrzEZ3sD5RlqGXNRpHtvUHJyOnCEFxOlNDtGo7wg==}
     engines: {node: 20 || >=22}
 
   jiti@2.4.2:
@@ -2984,13 +2981,13 @@ packages:
   pkg-types@1.3.1:
     resolution: {integrity: sha512-/Jm5M4RvtBFVkKWRu2BLUTNP8/M2a+UwuAX+ae4770q1qVGtfjG+WTCupoZixokjmHiry8uI+dlY8KXYV5HVVQ==}
 
-  playwright-core@1.58.1:
-    resolution: {integrity: sha512-bcWzOaTxcW+VOOGBCQgnaKToLJ65d6AqfLVKEWvexyS3AS6rbXl+xdpYRMGSRBClPvyj44njOWoxjNdL/H9UNg==}
+  playwright-core@1.58.2:
+    resolution: {integrity: sha512-yZkEtftgwS8CsfYo7nm0KE8jsvm6i/PTgVtB8DL726wNf6H2IMsDuxCpJj59KDaxCtSnrWan2AeDqM7JBaultg==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.58.1:
-    resolution: {integrity: sha512-+2uTZHxSCcxjvGc5C891LrS1/NlxglGxzrC4seZiVjcYVQfUa87wBL6rTDqzGjuoWNjnBzRqKmF6zRYGMvQUaQ==}
+  playwright@1.58.2:
+    resolution: {integrity: sha512-vA30H8Nvkq/cPBnNw4Q8TWz1EJyqgpuinBcHET0YVJVFldr8JDNiU9LaWAE1KqSkRYazuaBhTpB5ZzShOezQ6A==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -3282,8 +3279,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-preset-env@11.1.2:
-    resolution: {integrity: sha512-rtRQeKP7xZgAAE4YSxjYyX62qpgn9n7BczxtpA0AP4u9JYn1wfUhsd3ZmV9mi8IlU111aF1TtJMqT/QhmtAgLA==}
+  postcss-preset-env@11.1.3:
+    resolution: {integrity: sha512-kZOfgzUc52yq2fJRZig7sHgWaHJoDOLABBoswe6TPTHgW3581VkP3eRj+Silhc7cJTomMjZZsyRHNjQ+bW11Gg==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       postcss: ^8.4
@@ -3771,10 +3768,6 @@ packages:
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
     engines: {node: '>=8'}
-
-  string-width@5.1.2:
-    resolution: {integrity: sha512-HnLOCR3vjcY8beoNLtcjZ5/nxn2afmME6lhrDrebokqMap+XbeW8n9TXpPDOqdGK5qcI3oT0GKTW6wC7EMiVqA==}
-    engines: {node: '>=12'}
 
   string-width@7.2.0:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
@@ -4269,10 +4262,6 @@ packages:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
     engines: {node: '>=10'}
 
-  wrap-ansi@8.1.0:
-    resolution: {integrity: sha512-si7QWI6zUMq56bESFvagtmzMdGOtoxfR+Sez11Mobfc7tm+VkUckk9bW2UeffTGVUbOksxmSw0AA2gs8g71NCQ==}
-    engines: {node: '>=12'}
-
   wrap-ansi@9.0.2:
     resolution: {integrity: sha512-42AtmgqjV+X1VpdOfyTGOYRi0/zsoLqtXQckTmqTeybT+BDIbM/Guxo7x3pE2vtpr1ok6xRqM9OpBe+Jyoqyww==}
     engines: {node: '>=18'}
@@ -4358,6 +4347,9 @@ snapshots:
       - prettier-plugin-astro
 
   '@astrojs/compiler@2.13.0': {}
+
+  '@astrojs/compiler@2.13.1':
+    optional: true
 
   '@astrojs/internal-helpers@0.7.5': {}
 
@@ -4829,7 +4821,7 @@ snapshots:
       '@csstools/css-tokenizer': 4.0.0
       postcss: 8.5.6
 
-  '@csstools/postcss-text-decoration-shorthand@5.0.1(postcss@8.5.6)':
+  '@csstools/postcss-text-decoration-shorthand@5.0.2(postcss@8.5.6)':
     dependencies:
       '@csstools/color-helpers': 6.0.1
       postcss: 8.5.6
@@ -5193,14 +5185,7 @@ snapshots:
     dependencies:
       '@isaacs/balanced-match': 4.0.1
 
-  '@isaacs/cliui@8.0.2':
-    dependencies:
-      string-width: 5.1.2
-      string-width-cjs: string-width@4.2.3
-      strip-ansi: 7.1.2
-      strip-ansi-cjs: strip-ansi@6.0.1
-      wrap-ansi: 8.1.0
-      wrap-ansi-cjs: wrap-ansi@7.0.0
+  '@isaacs/cliui@9.0.0': {}
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
@@ -5269,9 +5254,9 @@ snapshots:
 
   '@oslojs/encoding@1.1.0': {}
 
-  '@playwright/browser-chromium@1.58.1':
+  '@playwright/browser-chromium@1.58.2':
     dependencies:
-      playwright-core: 1.58.1
+      playwright-core: 1.58.2
 
   '@redwerkz/html-min@0.15.1':
     optionalDependencies:
@@ -6291,8 +6276,6 @@ snapshots:
 
   dset@3.1.4: {}
 
-  eastasianwidth@0.2.0: {}
-
   electron-to-chromium@1.5.286: {}
 
   emmet@2.4.11:
@@ -6303,8 +6286,6 @@ snapshots:
   emoji-regex@10.6.0: {}
 
   emoji-regex@8.0.0: {}
-
-  emoji-regex@9.2.2: {}
 
   entities@4.5.0: {}
 
@@ -6520,7 +6501,7 @@ snapshots:
   glob@11.1.0:
     dependencies:
       foreground-child: 3.3.1
-      jackspeak: 4.1.1
+      jackspeak: 4.2.3
       minimatch: 10.1.2
       minipass: 7.1.2
       package-json-from-dist: 1.0.1
@@ -6825,9 +6806,9 @@ snapshots:
 
   isexe@3.1.1: {}
 
-  jackspeak@4.1.1:
+  jackspeak@4.2.3:
     dependencies:
-      '@isaacs/cliui': 8.0.2
+      '@isaacs/cliui': 9.0.0
 
   jiti@2.4.2:
     optional: true
@@ -7149,12 +7130,12 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  mermaid-isomorphic@3.0.4(playwright@1.58.1):
+  mermaid-isomorphic@3.0.4(playwright@1.58.2):
     dependencies:
       '@fortawesome/fontawesome-free': 6.7.2
       mermaid: 11.12.2
     optionalDependencies:
-      playwright: 1.58.1
+      playwright: 1.58.2
 
   mermaid@11.12.2:
     dependencies:
@@ -7613,11 +7594,11 @@ snapshots:
       mlly: 1.8.0
       pathe: 2.0.3
 
-  playwright-core@1.58.1: {}
+  playwright-core@1.58.2: {}
 
-  playwright@1.58.1:
+  playwright@1.58.2:
     dependencies:
-      playwright-core: 1.58.1
+      playwright-core: 1.58.2
     optionalDependencies:
       fsevents: 2.3.2
 
@@ -7900,7 +7881,7 @@ snapshots:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-preset-env@11.1.2(postcss@8.5.6):
+  postcss-preset-env@11.1.3(postcss@8.5.6):
     dependencies:
       '@csstools/postcss-alpha-function': 2.0.2(postcss@8.5.6)
       '@csstools/postcss-cascade-layers': 6.0.0(postcss@8.5.6)
@@ -7940,7 +7921,7 @@ snapshots:
       '@csstools/postcss-stepped-value-functions': 5.0.0(postcss@8.5.6)
       '@csstools/postcss-syntax-descriptor-syntax-production': 2.0.0(postcss@8.5.6)
       '@csstools/postcss-system-ui-font-family': 2.0.0(postcss@8.5.6)
-      '@csstools/postcss-text-decoration-shorthand': 5.0.1(postcss@8.5.6)
+      '@csstools/postcss-text-decoration-shorthand': 5.0.2(postcss@8.5.6)
       '@csstools/postcss-trigonometric-functions': 5.0.0(postcss@8.5.6)
       '@csstools/postcss-unset-value': 5.0.0(postcss@8.5.6)
       autoprefixer: 10.4.24(postcss@8.5.6)
@@ -8040,7 +8021,7 @@ snapshots:
 
   prettier-plugin-astro@0.14.1:
     dependencies:
-      '@astrojs/compiler': 2.13.0
+      '@astrojs/compiler': 2.13.1
       prettier: 3.8.1
       sass-formatter: 0.7.9
     optional: true
@@ -8144,19 +8125,19 @@ snapshots:
       unist-util-visit-parents: 6.0.2
       vfile: 6.0.3
 
-  rehype-mermaid@3.0.0(playwright@1.58.1):
+  rehype-mermaid@3.0.0(playwright@1.58.2):
     dependencies:
       '@types/hast': 3.0.4
       hast-util-from-html-isomorphic: 2.0.0
       hast-util-to-text: 4.0.2
-      mermaid-isomorphic: 3.0.4(playwright@1.58.1)
+      mermaid-isomorphic: 3.0.4(playwright@1.58.2)
       mini-svg-data-uri: 1.4.4
       space-separated-tokens: 2.0.2
       unified: 11.0.5
       unist-util-visit-parents: 6.0.2
       vfile: 6.0.3
     optionalDependencies:
-      playwright: 1.58.1
+      playwright: 1.58.2
 
   rehype-parse@9.0.1:
     dependencies:
@@ -8980,12 +8961,6 @@ snapshots:
       is-fullwidth-code-point: 3.0.0
       strip-ansi: 6.0.1
 
-  string-width@5.1.2:
-    dependencies:
-      eastasianwidth: 0.2.0
-      emoji-regex: 9.2.2
-      strip-ansi: 7.1.2
-
   string-width@7.2.0:
     dependencies:
       emoji-regex: 10.6.0
@@ -9445,12 +9420,6 @@ snapshots:
       ansi-styles: 4.3.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
-
-  wrap-ansi@8.1.0:
-    dependencies:
-      ansi-styles: 6.2.3
-      string-width: 5.1.2
-      strip-ansi: 7.1.2
 
   wrap-ansi@9.0.2:
     dependencies:
