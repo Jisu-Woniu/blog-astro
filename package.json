@@ -44,7 +44,7 @@
     "date-fns": "4.1.0",
     "katex": "^0.16.28",
     "lxgw-wenkai-screen-webfont": "^1.7.0",
-    "mermaid": "^11.12.2",
+    "mermaid": "^11.12.3",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-katex": "^7.0.1",
     "rehype-mermaid": "^3.0.0",
@@ -57,7 +57,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.6",
     "@astrojs/markdown-remark": "^6.3.10",
-    "@biomejs/biome": "^2.4.0",
+    "@biomejs/biome": "^2.4.2",
     "@playwright/browser-chromium": "^1.58.2",
     "autoprefixer": "^10.4.24",
     "browserslist": "^4.28.1",
@@ -89,6 +89,9 @@
       "@playwright/browser-chromium",
       "esbuild",
       "sharp"
-    ]
+    ],
+    "overrides": {
+      "lodash@>=4.0.0 <=4.17.22": "^4.17.23"
+    }
   }
 }
