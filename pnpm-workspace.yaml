@@ -1,0 +1,10 @@
+overrides:
+  "@npmcli/config@<9": ^9
+  glob@<12: ^12
+  lodash@>=4.0.0 <=4.17.22: ^4.17.23
+  minimatch@<10: ^10
+onlyBuiltDependencies:
+  - "@biomejs/biome"
+  - "@playwright/browser-chromium"
+  - esbuild
+  - sharp
