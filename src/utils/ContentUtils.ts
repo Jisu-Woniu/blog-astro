@@ -6,4 +6,5 @@ const getSortedBlogCollection = () =>
       (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
     ),
   );
+
 export { getSortedBlogCollection };
