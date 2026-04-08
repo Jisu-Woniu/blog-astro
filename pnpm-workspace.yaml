@@ -1,8 +1,10 @@
-overrides:
-  glob@<12: ^12
-  lodash@>=4.0.0 <=4.17.22: ^4.17.23
 onlyBuiltDependencies:
   - "@biomejs/biome"
   - "@playwright/browser-chromium"
   - esbuild
   - sharp
+
+overrides:
+  glob@<12: ^12
+  lodash@>=4.0.0 <=4.17.23: ^4.18.0
+  yaml@>=2.0.0 <2.8.3: ^2.8.3
